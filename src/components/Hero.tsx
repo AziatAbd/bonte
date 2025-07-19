@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
   return (
     <section
-      className="min-h-screen flex items-center bg-cover bg-center relative py-10"
+      className="min-h-screen flex items-center bg-cover bg-center relative pb-10 pt-30"
       style={{
         backgroundImage:
           'linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=800&fit=crop")',
@@ -116,7 +116,7 @@ export const HeroSection = () => {
                   whileHover="hover"
                   whileTap="tap"
                 >
-                  <Button size="lg" className="text-lg">
+                  <Button size="lg" className="text-lg w-full">
                     СДЕЛАТЬ ЗАКАЗ
                   </Button>
                 </motion.div>

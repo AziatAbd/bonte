@@ -7,7 +7,7 @@ const contactInfo = [
     value: "Кыргызская Республика г.Бишкек Лермонтова 1Б/4.",
   },
   {
-    title: "Email",
+    title: "Почта",
     value: "bonte.m.a8.@gmail.com",
   },
 ];
@@ -118,10 +118,12 @@ export const ContactSection = () => {
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4 mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold mb-1 text-[#0C1D3499]">
+                      <h3 className="uppercase text-[20px]/[20px] font-semibold mb-1 text-[#0C1D3499]">
                         {info.title}
                       </h3>
-                      <p className="text-[#0C1D3499]">{info.value}</p>
+                      <p className="text-[#0C1D3499] font-[Helvetica] ">
+                        {info.value}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -130,13 +132,13 @@ export const ContactSection = () => {
                   className="flex items-center space-x-4"
                 >
                   <div>
-                    <h3 className="text-xl font-semibold mb-1 text-[#0C1D3499]">
+                    <h3 className="uppercase text-[20px]/[20px] font-semibold mb-1 text-[#0C1D3499]">
                       Телефон
                     </h3>
-                    <p className="text-[#0C1D3499]">
+                    <p className="text-[#0C1D3499] font-[Helvetica]">
                       Отдел закупа: +996 999 22 33 36
                     </p>
-                    <p className="text-[#0C1D3499]">
+                    <p className="text-[#0C1D3499] font-[Helvetica]">
                       Отдел продаж: +996 999 22 33 95
                     </p>
                   </div>

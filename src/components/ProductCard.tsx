@@ -68,6 +68,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       whileTap={{ scale: 0.98 }}
     >
       <Card hover={true}>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-[2]" />
+
         <motion.img
           src={product.image}
           alt={product.title}
@@ -77,8 +79,9 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           whileInView="visible"
           viewport={{ once: true }}
         />
+
         <motion.div
-          className="text-white p-6 z-10 relative flex flex-col items-center justify-end h-full"
+          className="text-white p-6 z-[3] relative flex flex-col items-center justify-end h-full"
           variants={contentVariants}
           initial="hidden"
           whileInView="visible"

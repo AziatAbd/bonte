@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/helveticaneuecyr_black.otf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/helveticaneuecyr_roman.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/helveticaneuecyr_thin.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/helveticaneuecyr_ultralight.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
