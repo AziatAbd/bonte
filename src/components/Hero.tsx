@@ -131,7 +131,10 @@ export const HeroSection = () => {
                 </motion.div>
               </motion.div>
 
-              <motion.div className="flex gap-2" variants={containerVariants}>
+              <motion.div
+                className="sm:flex gap-2"
+                variants={containerVariants}
+              >
                 <div>
                   <div className="flex flex-col sm:flex-row gap-2 mb-2">
                     <motion.div
@@ -176,7 +179,7 @@ export const HeroSection = () => {
                   </div>
 
                   <motion.div
-                    className="border border-[#FDD259] rounded-[17px] text-[#FDD259] py-[19px] px-[11px] sm:w-[424px]"
+                    className="mb-2 not-target:border border-[#FDD259] rounded-[17px] text-[#FDD259] py-[19px] px-[11px] sm:w-[424px]"
                     variants={cardVariants}
                     whileHover="hover"
                   >
@@ -195,7 +198,7 @@ export const HeroSection = () => {
                 </div>
 
                 <motion.div
-                  className="border border-[#FDD259] rounded-[17px] text-[#FDD259] py-[19px] px-[11px] w-[160px]"
+                  className="border border-[#FDD259] rounded-[17px] text-[#FDD259] py-[19px] px-[11px] sm:w-[160px]"
                   variants={cardVariants}
                   whileHover="hover"
                 >

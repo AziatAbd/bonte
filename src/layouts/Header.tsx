@@ -15,7 +15,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
         <div className="flex items-center justify-between py-4">
           <div
             className={`text-[55px] font-[700] ${
-              mainPage ? "text-white" : "text-black"
+              mainPage ? "sm:text-white" : "text-black"
             }`}
           >
             BONTE
