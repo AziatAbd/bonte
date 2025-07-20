@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Container } from "../components/styles";
 import { X, Menu } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,14 +40,14 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             >
               О НАС
             </a>
-            <a
-              href="catalog/dairy"
+            <NavLink
+              to="catalog/dairy"
               className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
                 mainPage ? "text-white" : "text-gray-700"
               } transition-colors`}
             >
               КАТАЛОГ
-            </a>
+            </NavLink>
             <a
               href="/#contacts"
               className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
@@ -87,12 +88,12 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
               >
                 О НАС
               </a>
-              <a
-                href="catalog"
+              <NavLink
+                to="catalog"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 КАТАЛОГ
-              </a>
+              </NavLink>
               <a
                 href="/#contacts"
                 className="text-gray-300 hover:text-white transition-colors"
