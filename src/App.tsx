@@ -1,5 +1,5 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import FoodIndustryLanding from ".";
+import { Route, Routes } from "react-router-dom";
+import FoodIndustryLanding from "./containers/Landing";
 import Sidebar from "./layouts/Sidebar";
 import { Header } from "./layouts/Header";
 import Dairy from "./containers/Dairy";
@@ -15,75 +15,41 @@ import Bakery from "./containers/Bakery";
 import Cheese from "./containers/Cheese";
 
 function App() {
-  const routes = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Header mainPage />
-          <FoodIndustryLanding />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/catalog",
-      element: (
-        <>
-          <Header />
-          <Sidebar />
-          <Footer />
-        </>
-      ),
-
-      children: [
-        {
-          path: "dairy",
-          element: <Dairy />,
-        },
-        {
-          path: "starter",
-          element: <Starter />,
-        },
-        {
-          path: "spices",
-          element: <Spices />,
-        },
-        {
-          path: "colors",
-          element: <Colors />,
-        },
-        {
-          path: "horeca",
-          element: <Horeca />,
-        },
-        {
-          path: "filler",
-          element: <Filler />,
-        },
-        {
-          path: "preservatives",
-          element: <Preservatives />,
-        },
-        {
-          path: "stabilizers",
-          element: <Stabilizers />,
-        },
-        {
-          path: "bakery",
-          element: <Bakery />,
-        },
-        {
-          path: "cheese",
-          element: <Cheese />,
-        },
-      ],
-    },
-  ]);
-
   return (
     <>
-      <RouterProvider router={routes} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header mainPage />
+              <FoodIndustryLanding />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/catalog"
+          element={
+            <>
+              <Header />
+              <Sidebar />
+              <Footer />
+            </>
+          }
+        >
+          <Route path="dairy" element={<Dairy />} />
+          <Route path="starter" element={<Starter />} />
+          <Route path="spices" element={<Spices />} />
+          <Route path="colors" element={<Colors />} />
+          <Route path="horeca" element={<Horeca />} />
+          <Route path="filler" element={<Filler />} />
+          <Route path="preservatives" element={<Preservatives />} />
+          <Route path="stabilizers" element={<Stabilizers />} />
+          <Route path="bakery" element={<Bakery />} />
+          <Route path="cheese" element={<Cheese />} />
+        </Route>
+      </Routes>
     </>
   );
 }
