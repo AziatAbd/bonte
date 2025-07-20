@@ -92,7 +92,7 @@ export const HeroSection = () => {
         >
           <div>
             <motion.h1
-              className="text-4xl md:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-7xl font-bold mb-6 leading-tight font-stretch-ultra-condensed tracking-tighter sm:w-[600px]"
               variants={itemVariants}
             >
               ПОСТАВКА СЫРЬЯ ДЛЯ ПИЩЕВОЙ ПРОМЫШЛЕННОСТИ
@@ -125,7 +125,11 @@ export const HeroSection = () => {
                   whileHover="hover"
                   whileTap="tap"
                 >
-                  <Button size="lg" className="text-lg" variant="outline">
+                  <Button
+                    size="lg"
+                    className="text-lg w-full"
+                    variant="outline"
+                  >
                     ПОСМОТРЕТЬ КАТАЛОГ
                   </Button>
                 </motion.div>

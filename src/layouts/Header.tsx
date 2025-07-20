@@ -26,7 +26,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
           <nav className="hidden md:flex items-center space-x-6">
             <a
               href="/"
-              className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
+              className={`${mainPage ? "text-white" : "text-black"} hover:${
                 mainPage ? "text-white" : "text-gray-700"
               } transition-colors`}
             >
@@ -34,7 +34,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             </a>
             <a
               href="/#about"
-              className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
+              className={`${mainPage ? "text-white" : "text-black"} hover:${
                 mainPage ? "text-white" : "text-gray-700"
               } transition-colors`}
             >
@@ -42,7 +42,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             </a>
             <NavLink
               to="catalog/dairy"
-              className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
+              className={`${mainPage ? "text-white" : "text-black"} hover:${
                 mainPage ? "text-white" : "text-gray-700"
               } transition-colors`}
             >
@@ -50,7 +50,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             </NavLink>
             <a
               href="/#contacts"
-              className={`${mainPage ? "text-gray-300" : "text-black"} hover:${
+              className={`${mainPage ? "text-white" : "text-black"} hover:${
                 mainPage ? "text-white" : "text-gray-700"
               } transition-colors`}
             >
@@ -74,29 +74,35 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-700">
+          <div className="md:hidden p-4 border-t border-gray-700 absolute top-0 left-0 w-full bg-white z-50">
+            <button
+              className="md:hidden float-right"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
             <nav className="flex flex-col space-y-3">
               <a
                 href="/"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-black hover:text-white transition-colors"
               >
                 ГЛАВНАЯ
               </a>
               <a
                 href="/#about"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-black hover:text-white transition-colors"
               >
                 О НАС
               </a>
               <NavLink
-                to="catalog"
-                className="text-gray-300 hover:text-white transition-colors"
+                to="/catalog/dairy"
+                className="text-black hover:text-white transition-colors"
               >
                 КАТАЛОГ
               </NavLink>
               <a
                 href="/#contacts"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-black hover:text-white transition-colors"
               >
                 КОНТАКТЫ
               </a>

@@ -150,11 +150,12 @@ export const ContactSection = () => {
               className="h-80 bg-gray-600 rounded-lg flex items-center justify-center"
             >
               <iframe
-                title="2gis-map"
-                src="https://widgets.2gis.com/widget?type=map&lat=42.870996&lon=74.607697&zoom=16"
+                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89281877649548%2C%22lon%22%3A74.65345144271852%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001100683477%22%7D"
                 width="100%"
-                height="320"
-              />
+                height="100%"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </motion.div>
           </div>
         </motion.div>
