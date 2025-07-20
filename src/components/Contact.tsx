@@ -150,7 +150,7 @@ export const ContactSection = () => {
               className="h-80 bg-gray-600 rounded-lg flex items-center justify-center"
             >
               <iframe
-                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89281877649548%2C%22lon%22%3A74.65345144271852%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001100683477%22%7D"
+                src="https://www.google.com/maps?q=42.892308,74.653378&output=embed"
                 width="100%"
                 height="100%"
                 loading="lazy"
