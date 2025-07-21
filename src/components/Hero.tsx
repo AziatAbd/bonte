@@ -92,7 +92,7 @@ export const HeroSection = () => {
         >
           <div>
             <motion.h1
-              className="text-4xl md:text-7xl font-bold mb-6 leading-tight font-stretch-ultra-condensed tracking-tighter sm:w-[600px]"
+              className="text-4xl md:text-8xl font-bold mb-6 leading-tight font-stretch-ultra-condensed tracking-tighter sm:w-[600px]"
               variants={itemVariants}
             >
               ПОСТАВКА СЫРЬЯ ДЛЯ ПИЩЕВОЙ ПРОМЫШЛЕННОСТИ
