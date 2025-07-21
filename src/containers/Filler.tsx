@@ -1,6 +1,3 @@
-import milk from "../assets/images/products/milk.png";
-import bread from "../assets/images/products/bread.png";
-
 const Filler = () => {
   return (
     <main className="flex-1 p-10">
@@ -37,19 +34,6 @@ const Filler = () => {
         <li>Сывороточные напитки</li>
         <li>Простокваши, ряженки, кефиры и другие кисломолочные продукты.</li>
       </ul>
-
-      <div className="flex flex-wrap gap-12">
-        <img
-          src={milk}
-          alt="Ананасовый наполнитель"
-          className="rounded shadow-md w-[400px]"
-        />
-        <img
-          src={bread}
-          alt="Йогурт с фруктами и гранолой"
-          className="rounded shadow-md w-[400px]"
-        />
-      </div>
     </main>
   );
 };

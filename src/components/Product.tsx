@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { ProductCard } from "./ProductCard";
 import { Container } from "./styles";
 import milk from "../assets/images/products/milk.png";
-import breakfast from "../assets/images/products/breakfast.png";
-import condition from "../assets/images/products/condition.png";
-import spec from "../assets/images/products/spec.png";
+import burger from "../assets/images/products/burger.jpg";
+import cakes from "../assets/images/products/cakes.jpg";
+import spec from "../assets/images/products/spec.jpg";
 import bread from "../assets/images/products/bread.png";
-import coffee from "../assets/images/products/coffee.png";
+import dye from "../assets/images/products/dye.jpg";
 
 const products = [
   {
@@ -14,36 +14,42 @@ const products = [
     image: milk,
     description:
       "Поставляем ингредиенты для производства молочных продуктов: стабилизаторы, закваски, ароматизаторы и другие компоненты, обеспечивающие качество и безопасность конечной продукции.",
+    href: "/catalog/dairy",
   },
   {
     title: "Horeca",
-    image: breakfast,
+    image: burger,
     description:
       "Предлагаем широкий ассортимент ингредиентов для сегмента HoReCa: качественное сырьё для ресторанов, кафе и отелей, способствующее созданию вкусных и стабильных по качеству блюд.",
+    href: "/catalog/horeca",
   },
   {
     title: "Кондитерские изделия",
-    image: condition,
+    image: cakes,
     description:
       "Комплексные поставки ингредиентов для кондитерского производства: какао-продукты, наполнители, стабилизаторы, ароматизаторы и другое сырьё для создания современной кондитерской продукции.",
+    href: "/catalog/confectionery",
   },
   {
     title: "Специи",
     image: spec,
     description:
       "Прямые поставки натуральных специй и пряностей от ведущих производителей. Широкий выбор вкусовых и ароматических решений для различных направлений пищевой отрасли.",
+    href: "/catalog/spices",
   },
   {
     title: "Хлебобулочные продукты",
     image: bread,
     description:
       "Поставляем сырьё для хлебопекарной промышленности: улучшители, ферментные комплексы, закваски, добавки для продления свежести и улучшения качества готовой продукции.",
+    href: "/catalog/bakery",
   },
   {
     title: "Красители",
-    image: coffee,
+    image: dye,
     description:
       "Широкий выбор пищевых красителей для придания продукции привлекательного внешнего вида. Натуральные и синтетические решения, соответствующие требованиям безопасности и качества.",
+    href: "/catalog/colors",
   },
 ];
 

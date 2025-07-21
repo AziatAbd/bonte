@@ -187,7 +187,7 @@ export const VideoSection = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/Jc2OvGHMjzg?si=Rssd4P_X6Mbb5RTd"
+                src="https://www.youtube.com/embed/racb1jJxigo?si=uHndxIGQl4WekEjj"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"

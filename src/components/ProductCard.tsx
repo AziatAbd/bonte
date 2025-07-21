@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Card } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 type Product = {
   image: string;
   title: string;
   description: string;
+  href: string;
 };
 
 type ProductCardProps = {
@@ -12,50 +14,56 @@ type ProductCardProps = {
   index?: number;
 };
 
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+    scale: 0.9,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
+const contentVariants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+    },
+  },
+};
+
+const imageVariants = {
+  hidden: {
+    scale: 1.1,
+    opacity: 0.8,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
 export const ProductCard = ({ product }: ProductCardProps) => {
-  const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-      scale: 0.9,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
+  const navigate = useNavigate();
 
-  const contentVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        delay: 0.3,
-      },
-    },
-  };
-
-  const imageVariants = {
-    hidden: {
-      scale: 1.1,
-      opacity: 0.8,
-    },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-      },
-    },
+  const handleNavigate = () => {
+    navigate(product.href);
   };
 
   return (
@@ -66,6 +74,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.98 }}
+      onClick={handleNavigate}
+      className="cursor-pointer"
     >
       <Card hover={true}>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-[2]" />
@@ -73,7 +83,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         <motion.img
           src={product.image}
           alt={product.title}
-          className="h-full w-full object-fill absolute z-[1]"
+          className="h-full w-full object-cover absolute z-[1]"
           variants={imageVariants}
           initial="hidden"
           whileInView="visible"
