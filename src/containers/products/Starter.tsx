@@ -1,6 +1,6 @@
 import zacvaski from "../../assets/images/products/zacvaski.jpg";
-import zacvaska2 from "../../assets/images/products/zacvaska2.jpg";
-import zacvaska3 from "../../assets/images/products/zacvaska3.jpeg";
+import zacvaska2 from "../../assets/images/products/zacvaska2.jpeg";
+import zacvaska3 from "../../assets/images/products/zacvaska3.jpg";
 
 const Starter = () => {
   return (
