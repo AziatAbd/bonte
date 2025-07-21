@@ -1,5 +1,5 @@
-import milk from "../assets/images/products/milk.png";
-import milk2 from "../assets/images/products/milk2.jpg";
+import milk from "../../assets/images/products/milk.png";
+import milk2 from "../../assets/images/products/milk2.jpg";
 
 const Dairy = () => {
   return (

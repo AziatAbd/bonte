@@ -1,5 +1,5 @@
-import dye from "../assets/images/products/dye.jpg";
-import dye2 from "../assets/images/products/dye2.jpeg";
+import dye from "../../assets/images/products/dye.jpg";
+import dye2 from "../../assets/images/products/dye2.jpeg";
 
 const Colors = () => {
   return (

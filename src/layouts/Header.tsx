@@ -62,7 +62,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
               О НАС
             </NavLink>
             <NavLink
-              to="catalog/dairy"
+              to="/catalog/dairy"
               className={`${
                 mainPage ? "text-gray-400" : "text-black"
               } hover:text-yellow-500 transition-colors`}

@@ -1,4 +1,4 @@
-import bread from "../assets/images/products/bread.png";
+import bread from "../../assets/images/products/bread.png";
 
 const Bakery = () => {
   return (

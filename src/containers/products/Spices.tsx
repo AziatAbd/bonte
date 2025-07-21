@@ -1,5 +1,5 @@
-import spec from "../assets/images/products/spec.jpg";
-import spec2 from "../assets/images/products/spec2.webp";
+import spec from "../../assets/images/products/spec.jpg";
+import spec2 from "../../assets/images/products/spec2.webp";
 
 const Spices = () => {
   return (

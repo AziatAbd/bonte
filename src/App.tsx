@@ -2,17 +2,17 @@ import { Route, Routes } from "react-router-dom";
 import FoodIndustryLanding from "./containers/Landing";
 import Sidebar from "./layouts/Sidebar";
 import { Header } from "./layouts/Header";
-import Dairy from "./containers/Dairy";
+import Dairy from "./containers/products/Dairy";
 import { Footer } from "./layouts/Footer";
-import Starter from "./containers/Starter";
-import Spices from "./containers/Spices";
-import Colors from "./containers/Colors";
-import Horeca from "./containers/Horeca";
-import Filler from "./containers/Filler";
-import Preservatives from "./containers/Preservatives";
-import Stabilizers from "./containers/Stabilizers";
-import Bakery from "./containers/Bakery";
-import Cheese from "./containers/Cheese";
+import Starter from "./containers/products/Starter";
+import Spices from "./containers/products/Spices";
+import Colors from "./containers/products/Colors";
+import Horeca from "./containers/products/Horeca";
+import Filler from "./containers/products/Filler";
+import Preservatives from "./containers/products/Preservatives";
+import Stabilizers from "./containers/products/Stabilizers";
+import Bakery from "./containers/products/Bakery";
+import Cheese from "./containers/products/Cheese";
 
 function App() {
   return (
