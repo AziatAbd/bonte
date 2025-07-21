@@ -1,11 +1,17 @@
 import spec from "../assets/images/products/spec.jpg";
+import spec2 from "../assets/images/products/spec2.webp";
 
 const Spices = () => {
   return (
     <main className="flex flex-col md:flex-row items-start gap-8 p-10">
-      <div className="flex-shrink-0">
+      <div className="flex flex-col gap-4">
         <img
           src={spec}
+          alt="Специи"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={spec2}
           alt="Специи"
           className="rounded shadow-md w-[300px] md:w-[350px]"
         />

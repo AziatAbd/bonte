@@ -1,11 +1,23 @@
 import zacvaski from "../assets/images/products/zacvaski.jpg";
+import zacvaska2 from "../assets/images/products/zacvaska2.jpg";
+import zacvaska3 from "../assets/images/products/zacvaska3.jpeg";
 
 const Starter = () => {
   return (
     <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
-      <div className="flex-shrink-0">
+      <div className="flex flex-col gap-4">
         <img
           src={zacvaski}
+          alt="Закваски"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={zacvaska2}
+          alt="Закваски"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={zacvaska3}
           alt="Закваски"
           className="rounded shadow-md w-[300px] md:w-[350px]"
         />

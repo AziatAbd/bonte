@@ -1,11 +1,17 @@
 import dye from "../assets/images/products/dye.jpg";
+import dye2 from "../assets/images/products/dye2.jpeg";
 
 const Colors = () => {
   return (
     <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
-      <div className="flex-shrink-0">
+      <div className="flex flex-col gap-4">
         <img
           src={dye}
+          alt="Пищевые красители"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={dye2}
           alt="Пищевые красители"
           className="rounded shadow-md w-[300px] md:w-[350px]"
         />

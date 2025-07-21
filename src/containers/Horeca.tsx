@@ -1,11 +1,23 @@
 import burger from "../assets/images/products/burger.jpg";
+import burger2 from "../assets/images/products/burger2.jpg";
+import burger3 from "../assets/images/products/burger3.jpg";
 
 const Horeca = () => {
   return (
     <main className="flex flex-col md:flex-row items-start gap-8 p-10">
-      <div className="flex-shrink-0">
+      <div className="flex flex-col gap-4">
         <img
           src={burger}
+          alt="HoReCa – Бургеры и блюда"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={burger2}
+          alt="HoReCa – Бургеры и блюда"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={burger3}
           alt="HoReCa – Бургеры и блюда"
           className="rounded shadow-md w-[300px] md:w-[350px]"
         />

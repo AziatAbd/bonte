@@ -1,11 +1,17 @@
 import milk from "../assets/images/products/milk.png";
+import milk2 from "../assets/images/products/milk2.jpg";
 
 const Dairy = () => {
   return (
     <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
-      <div className="flex-shrink-0">
+      <div className="flex flex-col gap-4">
         <img
           src={milk}
+          alt="Молочная продукция"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
+        />
+        <img
+          src={milk2}
           alt="Молочная продукция"
           className="rounded shadow-md w-[300px] md:w-[350px]"
         />
