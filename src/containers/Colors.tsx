@@ -2,42 +2,38 @@ import dye from "../assets/images/products/dye.jpg";
 
 const Colors = () => {
   return (
-    <main className="flex-1 p-10">
-      <h1 className="text-xl font-medium mb-4">Краски пищевые</h1>
-      <p className="mb-2">
-        Безопасные пищевые красители для создания ярких и привлекательных
-        молочных продуктов, кондитерских изделий и напитков.
-      </p>
-      <p className="mb-4">
-        Предлагаем полный спектр пищевых красителей для различных
-        технологических процессов:
-      </p>
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>натуральные и синтетические красители;</li>
-        <li>водо- и жирорастворимые формы;</li>
-        <li>термостабильные красители для термообработанных продуктов.</li>
-      </ul>
-      <p className="mb-4">
-        Все красители сертифицированы и разрешены к применению в пищевой
-        промышленности, обеспечивают стабильный цвет готовой продукции.
-      </p>
-
-      <h2 className="text-lg font-semibold mb-2">Виды красителей:</h2>
-      <ul className="list-disc list-inside mb-8 space-y-1">
-        <li>Красные красители (кармин, свекольный красный)</li>
-        <li>Желтые красители (куркумин, тартразин)</li>
-        <li>Синие и зеленые красители</li>
-        <li>Антоцианы (фиолетовые и красные натуральные)</li>
-        <li>Каротиноиды (оранжевые и желтые)</li>
-        <li>Комплексные цветовые решения</li>
-      </ul>
-
-      <div className="flex flex-wrap gap-12">
+    <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
+      <div className="flex-shrink-0">
         <img
           src={dye}
-          alt="Ананасовый наполнитель"
-          className="rounded shadow-md w-[400px]"
+          alt="Пищевые красители"
+          className="rounded shadow-md w-[300px] md:w-[350px]"
         />
+      </div>
+
+      <div className="max-w-xl">
+        <h1 className="text-2xl font-bold mb-4">Пищевые красители</h1>
+        <p className="mb-3">
+          Пищевые красители для всех отраслей пищевой промышленности.
+        </p>
+        <p className="mb-3">
+          Натуральный запах и цвет продуктов питания достигается грамотным
+          использованием ароматических добавок и красящих пигментов.
+        </p>
+        <p className="mb-4">
+          Всю гамму красителей от классики до модерна... как натуральные, так и
+          идентичные натуральным, сухие красители и концентрированные вязкие
+          жидкости можем предоставить Вам!
+        </p>
+
+        <a
+          href="https://wa.me/+996500000020"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded"
+        >
+          ЗАКАЗАТЬ ПО WHATSAPP
+        </a>
       </div>
     </main>
   );

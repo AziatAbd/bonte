@@ -45,40 +45,39 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             className="hidden md:flex items-center space-x-6"
           >
             <a
-              href="#"
-              onClick={(e) => handleScroll(e, "home")}
-              className={`${mainPage ? "text-gray-400" : "text-black"} hover:${
-                mainPage ? "text-white" : "text-gray-700"
-              } transition-colors`}
+              href="/"
+              className={`${
+                mainPage ? "text-gray-400" : "text-black"
+              } hover:text-yellow-500 transition-colors`}
             >
               ГЛАВНАЯ
             </a>
-            <a
-              href="#"
-              onClick={(e) => handleScroll(e, "about")}
-              className={`${mainPage ? "text-gray-400" : "text-black"} hover:${
-                mainPage ? "text-white" : "text-gray-700"
-              } transition-colors`}
+            <NavLink
+              to="/"
+              state={{ scrollToId: "about" }}
+              className={`${
+                mainPage ? "text-gray-400" : "text-black"
+              } hover:text-yellow-500 transition-colors`}
             >
               О НАС
-            </a>
+            </NavLink>
             <NavLink
-              to="/catalog/dairy"
-              className={`${mainPage ? "text-gray-400" : "text-black"} hover:${
-                mainPage ? "text-white" : "text-gray-700"
-              } transition-colors`}
+              to="catalog/dairy"
+              className={`${
+                mainPage ? "text-gray-400" : "text-black"
+              } hover:text-yellow-500 transition-colors`}
             >
               КАТАЛОГ
             </NavLink>
-            <a
-              href="#"
-              onClick={(e) => handleScroll(e, "contacts")}
-              className={`${mainPage ? "text-gray-400" : "text-black"} hover:${
-                mainPage ? "text-white" : "text-gray-700"
-              } transition-colors`}
+            <NavLink
+              to="/"
+              state={{ scrollToId: "contacts" }}
+              className={`${
+                mainPage ? "text-gray-400" : "text-black"
+              } hover:text-yellow-500 transition-colors`}
             >
               КОНТАКТЫ
-            </a>
+            </NavLink>
           </motion.nav>
 
           {/* Кнопка */}

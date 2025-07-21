@@ -41,7 +41,7 @@ const SidebarTabs = () => {
       {/* Десктопный сайдбар */}
       <aside className="hidden md:block w-64 border-r p-6 bg-white shadow-sm">
         <h2 className="text-xl font-semibold mb-6">Каталог</h2>
-        <ul className="space-y-4 text-gray-600">
+        <ul className="space-y-4 text-gray-600 font-[Helvetica]">
           {categories.map(({ name, path }) => (
             <li key={path}>
               <NavLink
@@ -62,7 +62,7 @@ const SidebarTabs = () => {
       </aside>
 
       {/* Контент */}
-      <main className="flex-1 p-4 md:p-6">
+      <main className="flex-1 p-4 md:p-6 font-[Helvetica] bg-gray-50">
         <Outlet />
       </main>
     </div>
