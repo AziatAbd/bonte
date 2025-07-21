@@ -90,7 +90,10 @@ export const HeroSection = () => {
   }, [slides.length]);
 
   return (
-    <section className="min-h-screen flex items-center relative pb-10 pt-30 overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center relative pb-10 pt-30 overflow-hidden"
+    >
       {slides.map((slide, index) => (
         <motion.div
           key={index}
