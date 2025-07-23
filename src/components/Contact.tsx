@@ -147,15 +147,15 @@ export const ContactSection = () => {
             </motion.div>
             <motion.div
               variants={mapVariants}
-              className="h-80 bg-gray-600 rounded-lg flex items-center justify-center"
+              className="h-96 rounded-lg flex items-center justify-center"
             >
-              <iframe
-                src="https://www.google.com/maps?q=42.892308,74.653378&output=embed"
+              {/* <iframe
+                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89277161498958%2C%22lon%22%3A74.65257167816164%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001019321086%22%7D"
                 width="100%"
                 height="100%"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              ></iframe> */}
             </motion.div>
           </div>
         </motion.div>
