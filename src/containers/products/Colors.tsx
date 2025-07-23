@@ -1,48 +1,95 @@
 import dye from "../../assets/images/products/dye.jpg";
 import dye2 from "../../assets/images/products/dye2.jpeg";
+import { useState } from "react";
+
+const sections = [
+  { title: "Пищевые красители для напитков", img: dye },
+  { title: "Пищевые красители для выпечки", img: dye2 },
+  { title: "Красители для молочных продуктов" },
+  { title: "Красители для кондитерских изделий" },
+  { title: "Натуральные пищевые красители" },
+  { title: "Синтетические красители (по запросу)" },
+];
 
 const Colors = () => {
+  const [expandedSection, setExpandedSection] = useState<number | null>(null);
+
+  const toggleSection = (index: number) => {
+    setExpandedSection(expandedSection === index ? null : index);
+  };
+
   return (
-    <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
-      <div className="flex flex-col gap-4">
-        <img
-          src={dye}
-          alt="Пищевые красители"
-          className="rounded shadow-md w-[300px] md:w-[350px]"
-        />
-        <img
-          src={dye2}
-          alt="Пищевые красители"
-          className="rounded shadow-md w-[300px] md:w-[350px]"
-        />
-      </div>
+    <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
+      <h1 className="text-3xl font-bold">Пищевые красители</h1>
+      <p>
+        Красители широко применяются в различных отраслях пищевой промышленности
+        для придания продукции привлекательного внешнего вида.
+      </p>
+      <p>
+        Пищевые красители используются для окрашивания напитков, выпечки,
+        кремов, теста, кондитерских украшений, конфет и других продуктов.
+      </p>
+      <p>
+        У нас представлен широкий ассортимент красителей, включая натуральные и
+        синтетические варианты. Также возможно индивидуальное изготовление под
+        ваш запрос.
+      </p>
 
-      <div className="max-w-xl">
-        <h1 className="text-2xl font-bold mb-4">Пищевые красители</h1>
-        <p className="mb-3">
-          На сегодняшний день, в различных отраслях промышленности широко
-          распространены красители.
-        </p>
-        <p className="mb-3">
-          Пищевые красители – это особые вещества, применяемые для окрашивания
-          любых продуктов питания – напитков, готовых блюд, кремов, теста,
-          декора для кондитерских изделий, конфет и так далее.
-        </p>
-        <p className="mb-4">
-          В нашем ассортименте вы найдёте широкий выбор красителей. Также Вы
-          можете получить другие виды красителей по дополнительному запросу.
-        </p>
-
-        <a
-          href="https://wa.me/+996500000020"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded"
+      {sections.map((sec, i) => (
+        <div
+          key={sec.title}
+          className={`flex ${
+            i % 2 === 0 ? "flex-row" : "flex-row-reverse"
+          } gap-8 items-start`}
         >
-          ЗАКАЗАТЬ ПО WHATSAPP
-        </a>
-      </div>
-    </main>
+          {sec.img && (
+            <img
+              src={sec.img}
+              alt={sec.title}
+              className="rounded shadow-md w-[300px] md:w-[350px] object-cover"
+            />
+          )}
+
+          <div>
+            <div
+              className={`${
+                expandedSection === i ? "" : "max-h-[150px] overflow-hidden"
+              } transition-all duration-500 mb-4`}
+            >
+              <h2 className="text-2xl font-semibold">{sec.title}</h2>
+              <p className="mb-3">
+                В зависимости от задач вы можете выбрать натуральные или
+                синтетические красители, каждый из которых обладает своей
+                устойчивостью к температуре, свету и pH.
+              </p>
+              <ul className="list-disc list-inside mb-3 space-y-1">
+                <li>Широкая палитра цветов</li>
+                <li>Подходит для всех видов пищевых продуктов</li>
+                <li>Доступны концентраты и порошковые формы</li>
+              </ul>
+              <p className="mb-4">
+                Все продукты соответствуют стандартам безопасности пищевых
+                добавок и прошли сертификацию.
+              </p>
+              <a
+                href="https://wa.me/+996500000020"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+              >
+                Заказать по WhatsApp
+              </a>
+            </div>
+            <button
+              className="text-blue-500 underline cursor-pointer"
+              onClick={() => toggleSection(i)}
+            >
+              {expandedSection === i ? "Скрыть" : "Подробнее"}
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 

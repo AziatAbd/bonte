@@ -1,66 +1,92 @@
 import milk from "../../assets/images/products/milk.png";
 import milk2 from "../../assets/images/products/milk2.jpg";
+import { useState } from "react";
+
+const sections = [
+  { title: "Сухое обезжиренное молоко", img: milk },
+  { title: "Сывороточные белковые концентраты", img: milk2 },
+  { title: "Казеинаты и казеины" },
+  { title: "Молочные жиры и сливки" },
+  { title: "Лактоза и молочные сахара" },
+  { title: "Функциональные молочные добавки" },
+];
 
 const Dairy = () => {
+  const [expandedSection, setExpandedSection] = useState<number | null>(null);
+
+  const toggleSection = (index: number) => {
+    setExpandedSection(expandedSection === index ? null : index);
+  };
+
   return (
-    <main className="flex flex-col md:flex-row items-start gap-8 p-10 font-[Helvetica]">
-      <div className="flex flex-col gap-4">
-        <img
-          src={milk}
-          alt="Молочная продукция"
-          className="rounded shadow-md w-[300px] md:w-[350px]"
-        />
-        <img
-          src={milk2}
-          alt="Молочная продукция"
-          className="rounded shadow-md w-[300px] md:w-[350px]"
-        />
-      </div>
+    <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
+      <h1 className="text-3xl font-bold">Молочная продукция</h1>
+      <p>
+        Комплексные решения для производства высококачественной молочной
+        продукции, включая функциональные ингредиенты, добавки и технологические
+        решения.
+      </p>
+      <p>
+        Мы предлагаем полный спектр ингредиентов для различных видов молочной
+        продукции.
+      </p>
 
-      <div className="max-w-xl">
-        <h1 className="text-2xl font-bold mb-4">Молочная продукция</h1>
-        <p className="mb-3">
-          Комплексные решения для производства высококачественной молочной
-          продукции, включая функциональные ингредиенты, добавки и
-          технологические решения.
-        </p>
-        <p className="mb-3">
-          Мы предлагаем полный спектр ингредиентов для различных видов молочной
-          продукции:
-        </p>
-        <ul className="list-disc list-inside mb-4 space-y-1">
-          <li>молочные белки и сывороточные протеины;</li>
-          <li>функциональные молочные компоненты;</li>
-          <li>ингредиенты для улучшения текстуры, вкуса и пищевой ценности.</li>
-        </ul>
-        <p className="mb-4">
-          Наши решения позволяют производителям создавать инновационную молочную
-          продукцию с улучшенными функциональными свойствами и увеличенным
-          сроком хранения.
-        </p>
-
-        <h2 className="text-lg font-semibold mb-2">
-          Категории молочных ингредиентов:
-        </h2>
-        <ul className="list-disc list-inside mb-6 space-y-1">
-          <li>Сухое обезжиренное молоко</li>
-          <li>Сывороточные белковые концентраты</li>
-          <li>Казеинаты и казеины</li>
-          <li>Молочные жиры и сливки</li>
-          <li>Лактоза и молочные сахара</li>
-          <li>Функциональные молочные добавки</li>
-        </ul>
-
-        <a
-          href="https://wa.me/+996500000020"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded"
+      {sections.map((sec, i) => (
+        <div
+          key={sec.title}
+          className={`flex ${
+            i % 2 === 0 ? "flex-row" : "flex-row-reverse"
+          } gap-8 items-start`}
         >
-          ЗАКАЗАТЬ ПО WHATSAPP
-        </a>
-      </div>
-    </main>
+          {sec.img && (
+            <img
+              src={sec.img}
+              alt={sec.title}
+              className="rounded shadow-md w-[300px] md:w-[350px] object-cover"
+            />
+          )}
+
+          <div>
+            <div
+              className={`${
+                expandedSection === i ? "" : "max-h-[150px] overflow-hidden"
+              } transition-all duration-500 mb-4`}
+            >
+              <h2 className="text-2xl font-semibold">{sec.title}</h2>
+              <p className="mb-3">
+                Наши ингредиенты позволяют производителям разрабатывать
+                инновационные молочные продукты с улучшенными функциональными
+                характеристиками, текстурой и вкусом.
+              </p>
+              <ul className="list-disc list-inside mb-3 space-y-1">
+                <li>Улучшение питательной ценности и сроков хранения</li>
+                <li>Оптимизация консистенции и структуры</li>
+                <li>Снижение себестоимости без потери качества</li>
+              </ul>
+              <p className="mb-4">
+                Все компоненты соответствуют международным стандартам качества,
+                имеют сертификаты халяль и кошер, и могут использоваться в любом
+                технологическом процессе.
+              </p>
+              <a
+                href="https://wa.me/+996500000020"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+              >
+                Заказать по WhatsApp
+              </a>
+            </div>
+            <button
+              className="text-blue-500 underline cursor-pointer"
+              onClick={() => toggleSection(i)}
+            >
+              {expandedSection === i ? "Скрыть" : "Подробнее"}
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
