@@ -63,7 +63,6 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             </NavLink>
             <NavLink
               to="/catalog/dairy"
-              reloadDocument
               className={`${
                 mainPage ? "text-gray-400" : "text-black"
               } hover:text-yellow-500 transition-colors`}
