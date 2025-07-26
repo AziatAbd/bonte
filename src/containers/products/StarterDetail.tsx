@@ -116,9 +116,14 @@ const StarterDetail = () => {
                 кошерный сертификаты, содержат чистые культуры молочнокислых
                 бактерий и соответствуют требованиям международных стандартов.
               </p>
-              <button className="mt-2 inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700">
+              <a
+                href="https://wa.me/+996999223395"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+              >
                 Заказать по WhatsApp
-              </button>
+              </a>
             </div>
             <button
               className="text-blue-500 underline cursor-pointer"

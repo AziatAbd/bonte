@@ -68,7 +68,7 @@ const HorecaDetail = () => {
                 общественного питания.
               </p>
               <a
-                href="https://wa.me/+996500000020"
+                href="https://wa.me/+996999223395"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"

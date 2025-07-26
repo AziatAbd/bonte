@@ -676,7 +676,7 @@ const ProductGrid = ({ category }: ProductGridProps) => {
           отличными функциональными характеристиками и стабильным качеством.
         </p>
         <a
-          href="https://wa.me/+996500000020"
+          href="https://wa.me/+996999223395"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300"

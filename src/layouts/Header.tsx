@@ -83,7 +83,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
 
           {/* Кнопка */}
           <motion.a
-            href="https://wa.me/+996500000020"
+            href="https://wa.me/+996999223395"
             target="_blank"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -147,7 +147,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
                 >
                   КОНТАКТЫ
                 </a>
-                <a href="https://wa.me/+996500000020" target="_blank">
+                <a href="https://wa.me/+996999223395" target="_blank">
                   <Button variant="secondary" size="sm" className="w-fit">
                     СВЯЗАТЬСЯ
                   </Button>
