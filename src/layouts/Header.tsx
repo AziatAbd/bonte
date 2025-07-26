@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Button, Container } from "../components/styles";
 import { X, Menu } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { smoothScrollToId } from "../utils/smoothScrollToId";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleScroll = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
@@ -27,6 +29,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
         <div className="flex items-center justify-between py-4">
           {/* Логотип */}
           <motion.div
+            onClick={() => navigate("/")}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -120,32 +123,32 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
               </button>
               <nav className="flex flex-col space-y-3 mt-8">
                 <a
-                  href="#"
+                  href="/"
                   onClick={(e) => handleScroll(e, "home")}
                   className="text-black hover:text-white transition-colors"
                 >
                   ГЛАВНАЯ
                 </a>
-                <a
-                  href="#"
-                  onClick={(e) => handleScroll(e, "about")}
+                <NavLink
+                  to="/"
+                  state={{ scrollToId: "about" }}
                   className="text-black hover:text-white transition-colors"
                 >
                   О НАС
-                </a>
+                </NavLink>
                 <NavLink
                   to="/catalog/dairy"
                   className="text-black hover:text-white transition-colors"
                 >
                   КАТАЛОГ
                 </NavLink>
-                <a
-                  href="#"
-                  onClick={(e) => handleScroll(e, "contacts")}
+                <NavLink
+                  to="/"
+                  state={{ scrollToId: "contacts" }}
                   className="text-black hover:text-white transition-colors"
                 >
                   КОНТАКТЫ
-                </a>
+                </NavLink>
                 <a href="https://wa.me/+996999223395" target="_blank">
                   <Button variant="secondary" size="sm" className="w-fit">
                     СВЯЗАТЬСЯ

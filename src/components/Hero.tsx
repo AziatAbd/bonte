@@ -4,6 +4,7 @@ import firstSlideImg from "../assets/images/hero/slide-1.png";
 import secondSlideImg from "../assets/images/hero/slide-2.png";
 import thirdSlideImg from "../assets/images/hero/slide-3.png";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -79,6 +80,8 @@ const cardVariants = {
 };
 export const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const navigate = useNavigate();
 
   const slides = [firstSlideImg, secondSlideImg, thirdSlideImg];
 
@@ -170,6 +173,7 @@ export const HeroSection = () => {
                     size="lg"
                     className="text-lg w-full"
                     variant="outline"
+                    onClick={() => navigate("/catalog/dairy")}
                   >
                     ПОСМОТРЕТЬ КАТАЛОГ
                   </Button>
@@ -193,7 +197,7 @@ export const HeroSection = () => {
                         animate={{ scale: 1 }}
                         transition={{ delay: 1, duration: 0.5, type: "spring" }}
                       >
-                        300+
+                        500+
                       </motion.div>
                       <div className="text-base">
                         Тонн сырья поставляется ежемесячно по всей стране
@@ -253,7 +257,7 @@ export const HeroSection = () => {
                     animate={{ scale: 1 }}
                     transition={{ delay: 1.6, duration: 0.5, type: "spring" }}
                   >
-                    500+
+                    600+
                   </motion.div>
                   <div className="text-base">
                     Клиентов из сферы молочной, кондитерской и HoReCa

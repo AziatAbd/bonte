@@ -34,8 +34,8 @@ const DairyDetail = () => {
       {sections.map((sec, i) => (
         <div
           key={sec.title}
-          className={`flex ${
-            i % 2 === 0 ? "flex-row" : "flex-row-reverse"
+          className={`flex flex-col ${
+            i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
           } gap-8 items-start`}
         >
           {sec.img && (
