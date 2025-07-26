@@ -155,9 +155,12 @@ export const ContactSection = () => {
             >
               {/* <Map /> */}
               <iframe
-                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89321178764213%2C%22lon%22%3A74.65214252471925%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001059237277%22%7D"
+                src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89321178764213%2C%22lon%22%3A74.65214252471925%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001059237277%22%7D"
                 width="100%"
                 height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </motion.div>
           </div>
