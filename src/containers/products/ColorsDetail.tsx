@@ -11,7 +11,7 @@ const sections = [
   { title: "Синтетические красители (по запросу)" },
 ];
 
-const Colors = () => {
+const ColorsDetail = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -93,4 +93,4 @@ const Colors = () => {
   );
 };
 
-export default Colors;
+export default ColorsDetail;

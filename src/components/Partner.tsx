@@ -5,9 +5,25 @@ import organic from "../assets/images/partners/Organic_logo.png";
 import besh from "../assets/images/partners/besh.png";
 import umai from "../assets/images/partners/umai.png";
 import salih from "../assets/images/partners/salih.png";
+import riha from "../assets/images/partners/riha.png";
+import milk from "../assets/images/partners/milk.jpeg";
+import jetiBaatyr from "../assets/images/partners/jeti-baatyr.png";
+import shinLine from "../assets/images/partners/shin-line.jpeg";
+import iceCream from "../assets/images/partners/ice-queen.jpeg";
 
 export const PartnersSection = () => {
-  const partners = [belayaReka, organic, besh, umai, salih];
+  const partners = [
+    belayaReka,
+    organic,
+    besh,
+    umai,
+    salih,
+    riha,
+    milk,
+    jetiBaatyr,
+    shinLine,
+    iceCream,
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -87,13 +103,13 @@ export const PartnersSection = () => {
           </motion.h2>
 
           <motion.div
-            className="flex flex-wrap justify-center items-center gap-8"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-8"
             variants={partnersGridVariants}
           >
             {partners.map((partner, index) => (
               <motion.img
                 key={index}
-                className="border-gray-300 text-gray-700 text-lg px-6 py-2 max-w-40"
+                className="border-gray-300 text-gray-700 text-lg px-6 py-2 max-w-44"
                 src={partner}
                 alt={`Partner ${index + 1}`}
                 variants={partnerVariants}

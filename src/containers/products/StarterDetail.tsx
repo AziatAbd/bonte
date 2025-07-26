@@ -13,7 +13,7 @@ const sections = [
   // { title: "Заквасочные культуры для айрана" },
 ];
 
-const Starter = () => {
+const StarterDetail = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -133,4 +133,4 @@ const Starter = () => {
   );
 };
 
-export default Starter;
+export default StarterDetail;

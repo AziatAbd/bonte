@@ -17,7 +17,7 @@ const SidebarTabs = () => {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-white text-black">
+    <div className="min-h-screen flex flex-col md:flex-row bg-white text-black mb-20">
       {/* Мобильные табы */}
       <nav className="md:hidden flex overflow-x-auto border-b bg-white shadow-sm">
         {categories.map(({ name, path }) => {
@@ -39,7 +39,7 @@ const SidebarTabs = () => {
       </nav>
 
       {/* Десктопный сайдбар */}
-      <aside className="hidden md:block w-64 border-r p-6 bg-white shadow-sm">
+      <aside className="hidden md:block w-64 border-r p-6 bg-white ">
         <h2 className="text-xl font-semibold mb-6">Каталог</h2>
         <ul className="space-y-4 text-gray-600 font-[Helvetica]">
           {categories.map(({ name, path }) => (
@@ -62,7 +62,7 @@ const SidebarTabs = () => {
       </aside>
 
       {/* Контент */}
-      <main className="flex-1 p-4 md:p-6 font-[Helvetica] bg-gray-50">
+      <main className="flex-1 p-4 md:p-6 font-[Helvetica] bg-gray-50 min-h-screen">
         <Outlet />
       </main>
     </div>

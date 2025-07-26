@@ -9,39 +9,24 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <a
-      class="dg-widget-link"
-      href="http://2gis.kg/bishkek/firm/70000001019321086/center/74.65257167816164,42.89277161498958/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
-      >Посмотреть на карте Бишкека</a
-    >
-    <div class="dg-widget-link">
-      <a
-        href="http://2gis.kg/bishkek/firm/70000001019321086/photos/70000001019321086/center/74.65257167816164,42.89277161498958/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos"
-        >Фотографии компании</a
-      >
-    </div>
-    <div class="dg-widget-link">
-      <a
-        href="http://2gis.kg/bishkek/center/74.65258,42.892469/zoom/16/routeTab/rsType/bus/to/74.65258,42.892469╎Ишмер, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
-        >Найти проезд до Ишмер, компания</a
-      >
-    </div>
     <script
       charset="utf-8"
       src="https://widgets.2gis.com/js/DGWidgetLoader.js"
     ></script>
-    <div style="position: absolute; bottom: -3450px; right: 275px">
-      <script charset="utf-8">
-        new DGWidgetLoader({
-          width: 640,
-          height: 320,
-          borderColor: "#a3a3a3",
-          pos: { lat: 42.89277161498958, lon: 74.65257167816164, zoom: 16 },
-          opt: { city: "bishkek" },
-          org: [{ id: "70000001019321086" }],
-        });
-      </script>
-    </div>
+    <!-- <div style="position: absolute; bottom: -4650px; right: 175px">
+        <script charset="utf-8">
+          if (window.location.pathname === "/") {
+            new DGWidgetLoader({
+              width: 640,
+              height: 320,
+              borderColor: "#a3a3a3",
+              pos: { lat: 42.89321178764213, lon: 74.65214252471925, zoom: 16 },
+              opt: { city: "bishkek" },
+              org: [{ id: "70000001059237277" }],
+            });
+          }
+        </script>
+      </div> -->
     <noscript style="color: #c00; font-size: 16px; font-weight: bold"
       >Виджет карты использует JavaScript. Включите его в настройках вашего
       браузера.</noscript

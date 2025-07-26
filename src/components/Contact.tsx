@@ -136,10 +136,13 @@ export const ContactSection = () => {
                       Телефон
                     </h3>
                     <p className="text-[#0C1D3499] font-[Helvetica]">
+                      Отдел продаж: +996 999 22 33 95
+                    </p>
+                    <p className="text-[#0C1D3499] font-[Helvetica]">
                       Отдел закупа: +996 999 22 33 36
                     </p>
                     <p className="text-[#0C1D3499] font-[Helvetica]">
-                      Отдел продаж: +996 999 22 33 95
+                      Бухгалтерия: +996 555 966 034
                     </p>
                   </div>
                 </motion.div>
@@ -148,14 +151,14 @@ export const ContactSection = () => {
             <motion.div
               variants={mapVariants}
               className="h-96 rounded-lg flex items-center justify-center"
+              id="dg-map-container"
             >
-              {/* <iframe
-                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89277161498958%2C%22lon%22%3A74.65257167816164%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001019321086%22%7D"
+              {/* <Map /> */}
+              <iframe
+                src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A42.89321178764213%2C%22lon%22%3A74.65214252471925%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22bishkek%22%7D%2C%22org%22%3A%2270000001059237277%22%7D"
                 width="100%"
                 height="100%"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe> */}
+              ></iframe>
             </motion.div>
           </div>
         </motion.div>

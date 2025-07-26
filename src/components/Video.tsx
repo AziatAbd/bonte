@@ -2,18 +2,6 @@ import { motion } from "framer-motion";
 import { Container } from "./styles";
 
 export const VideoSection = () => {
-  const videoStats = [
-    { number: "150+", label: "Видов продукции наилучшего качества" },
-    {
-      number: "10 лет",
-      label: "Мы работаем на рынке промышленности среди производителей ",
-    },
-    {
-      number: "Топ-5",
-      label: "Поставщиков среди сырья на территории Кыргызстана",
-    },
-  ];
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -71,33 +59,6 @@ export const VideoSection = () => {
     },
   };
 
-  const statsVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const statCardVariants = {
-    hidden: {
-      opacity: 0,
-      scale: 0.8,
-      y: 20,
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <section className="py-20 text-black">
       <Container>
@@ -109,7 +70,7 @@ export const VideoSection = () => {
           variants={containerVariants}
         >
           <motion.div
-            className="bg-[#FFF09F] px-[64px] py-[50px] rounded-lg"
+            className="bg-[#FFF09F] px-[64px] py-[50px] rounded-lg w-full h-full flex items-center"
             variants={leftSideVariants}
             whileHover={{
               scale: 1.02,
@@ -131,49 +92,6 @@ export const VideoSection = () => {
                 о компании
               </motion.span>
             </motion.h2>
-
-            <motion.div
-              className="flex flex-wrap gap-6 justify-center"
-              variants={statsVariants}
-            >
-              {videoStats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  className="text-center bg-white rounded-2xl pt-2 pb-1 px-3 sm:w-[135px]"
-                  variants={statCardVariants}
-                  whileHover={{
-                    scale: 1.05,
-                    y: -5,
-                    transition: { duration: 0.2 },
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <motion.div
-                    className="text-3xl font-bold text-yellow-500 mb-2"
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{
-                      delay: 0.5 + index * 0.1,
-                      duration: 0.5,
-                      type: "spring",
-                      stiffness: 200,
-                    }}
-                    viewport={{ once: true }}
-                  >
-                    {stat.number}
-                  </motion.div>
-                  <motion.div
-                    className="text-sm text-yellow-500 text-center sm:text-start"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.7 + index * 0.1, duration: 0.4 }}
-                    viewport={{ once: true }}
-                  >
-                    {stat.label}
-                  </motion.div>
-                </motion.div>
-              ))}
-            </motion.div>
           </motion.div>
 
           <motion.div className="relative" variants={rightSideVariants}>

@@ -44,7 +44,7 @@ const sections = [
   },
 ];
 
-const Preservatives = () => {
+const PreservativesDetail = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
       <h1 className="text-3xl font-bold mb-6">Консерванты</h1>
@@ -87,4 +87,4 @@ const Preservatives = () => {
   );
 };
 
-export default Preservatives;
+export default PreservativesDetail;

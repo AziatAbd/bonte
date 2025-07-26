@@ -49,7 +49,7 @@ const sections = [
   },
 ];
 
-const Filler = () => {
+const FillerDetail = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
       <h1 className="text-3xl font-bold mb-6">Наполнители</h1>
@@ -92,4 +92,4 @@ const Filler = () => {
   );
 };
 
-export default Filler;
+export default FillerDetail;

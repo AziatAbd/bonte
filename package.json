@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.62.0",
     "@tailwindcss/vite": "^4.1.11",
     "2gis-maps": "^4.0.9",
     "framer-motion": "^12.23.6",

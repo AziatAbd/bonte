@@ -11,7 +11,7 @@ const sections = [
   { title: "Ароматические травы и листья" },
 ];
 
-const Spices = () => {
+const SpicesDetail = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -87,4 +87,4 @@ const Spices = () => {
   );
 };
 
-export default Spices;
+export default SpicesDetail;

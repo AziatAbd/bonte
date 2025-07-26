@@ -11,7 +11,7 @@ const sections = [
   { title: "Функциональные молочные добавки" },
 ];
 
-const Dairy = () => {
+const DairyDetail = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -90,4 +90,4 @@ const Dairy = () => {
   );
 };
 
-export default Dairy;
+export default DairyDetail;
