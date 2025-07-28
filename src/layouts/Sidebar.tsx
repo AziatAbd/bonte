@@ -2,15 +2,11 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 const categories = [
   { name: "Молочная продукция", path: "/catalog/dairy" },
-  { name: "Закваски", path: "/catalog/starter" },
-  { name: "Специи", path: "/catalog/spices" },
-  { name: "Краски", path: "/catalog/colors" },
+  { name: "Специализированные жиры", path: "/catalog/specialized-fats" },
   { name: "Horeca", path: "/catalog/horeca" },
-  { name: "Наполнитель", path: "/catalog/filler" },
-  { name: "Консерванты", path: "/catalog/preservatives" },
-  { name: "Стабилизаторы", path: "/catalog/stabilizers" },
+  { name: "Пищевая химия", path: "/catalog/food-chemistry" },
   { name: "Хлебобулочные изделия", path: "/catalog/bakery" },
-  { name: "Сырные изделия", path: "/catalog/cheese" },
+  { name: "Кондитерские направление", path: "/catalog/confectionery" },
 ];
 
 const SidebarTabs = () => {

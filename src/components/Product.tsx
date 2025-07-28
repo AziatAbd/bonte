@@ -4,9 +4,9 @@ import { Container } from "./styles";
 import milk from "../assets/images/products/milk.png";
 import burger from "../assets/images/products/burger.jpg";
 import cakes from "../assets/images/products/cakes.jpg";
-import spec from "../assets/images/products/spec.jpg";
+import spec from "../assets/images/products/karaginan.jpg";
 import bread from "../assets/images/products/bread.png";
-import dye from "../assets/images/products/dye.jpg";
+import dye from "../assets/images/products/ZMG_Wikipedia.png";
 
 const products = [
   {
@@ -31,11 +31,11 @@ const products = [
     href: "/catalog/confectionery",
   },
   {
-    title: "Специи",
+    title: "Пищевая химия",
     image: spec,
     description:
-      "Прямые поставки натуральных специй и пряностей от ведущих производителей. Широкий выбор вкусовых и ароматических решений для различных направлений пищевой отрасли.",
-    href: "/catalog/spices",
+      "Высококачественные химические добавки для пищевой промышленности, включая сорбат калия, фосфомикс и другие функциональные ингредиенты. Обеспечивают безопасность, стабильность и улучшение технологических свойств продукции.",
+    href: "/catalog/food-chemistry",
   },
   {
     title: "Хлебобулочные продукты",
@@ -45,11 +45,11 @@ const products = [
     href: "/catalog/bakery",
   },
   {
-    title: "Красители",
+    title: "Специализированные жиры",
     image: dye,
     description:
-      "Широкий выбор пищевых красителей для придания продукции привлекательного внешнего вида. Натуральные и синтетические решения, соответствующие требованиям безопасности и качества.",
-    href: "/catalog/colors",
+      "Высококачественные специализированные жиры для пищевой промышленности. Кондитерские, хлебопекарные и фритюрные жиры, обеспечивающие превосходные технологические свойства и длительный срок хранения продукции.",
+    href: "/catalog/specialized-fats",
   },
 ];
 

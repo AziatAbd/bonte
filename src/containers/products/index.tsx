@@ -1,68 +1,64 @@
-import zacvaski from "../../assets/images/products/zacvaski.jpg";
-import zacvaska2 from "../../assets/images/products/zacvaska2.jpeg";
-import zacvaska3 from "../../assets/images/products/zacvaska3.jpg";
+import zacvaska2 from "../../assets/images/products/ZMG_Wikipedia.png";
 import bread from "../../assets/images/products/bread.png";
-import dye from "../../assets/images/products/dye.jpg";
-import dye2 from "../../assets/images/products/dye2.jpeg";
-import napolnitel from "../../assets/images/products/napolnitel.jpeg";
-import napolnitelKivi from "../../assets/images/products/napolnitel-kivi.jpeg";
+import sorbat from "../../assets/images/products/sorbat.jpg";
+import karaginan from "../../assets/images/products/karaginan.jpg";
 import burger from "../../assets/images/products/burger.jpg";
 import burger2 from "../../assets/images/products/burger2.jpg";
 import burger3 from "../../assets/images/products/burger3.jpg";
-import spec from "../../assets/images/products/spec.jpg";
-import spec2 from "../../assets/images/products/spec2.webp";
 import milk from "../../assets/images/products/milk.png";
 import milk2 from "../../assets/images/products/milk2.jpg";
+import nachinki from "../../assets/images/products/nachinki.jpg";
+import glazur from "../../assets/images/products/glazur.jpg";
 import { useNavigate } from "react-router-dom";
 
 // Молочная продукция
 const dairyProducts = [
   {
     id: 1,
-    title: "Сухое обезжиренное молоко",
+    title: "Заквасочные культуры",
     img: milk,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
-    title: "Сывороточные белковые концентраты",
+    title: "Стабилизаторы",
     img: milk2,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
-    title: "Казеинаты и казеины",
+    title: "Ароматизаторы",
     img: milk,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
-    title: "Молочные жиры и сливки",
+    title: "Консерванты",
     img: milk2,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
-    title: "Лактоза и молочные сахара",
+    title: "Ферменты",
     img: milk,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
-    title: "Функциональные молочные добавки",
+    title: "Заменитель молочного жира",
     img: milk2,
     inStock: false,
     onOrder: true,
   },
-  { id: 7, title: "Молочный белок", img: milk, inStock: true, onOrder: false },
+  { id: 7, title: "СОМ", img: milk, inStock: true, onOrder: false },
   {
     id: 8,
-    title: "Сухая молочная сыворотка",
+    title: "Сыворотка",
     img: milk2,
     inStock: false,
     onOrder: true,
@@ -70,62 +66,13 @@ const dairyProducts = [
 ];
 
 // Заквасочные культуры
-const starterProducts = [
+const specializedFatsProducts = [
   {
     id: 1,
-    title: "Заквасочные культуры для йогурта",
+    title: "Заменитель молочного жира",
     img: zacvaska2,
     inStock: true,
     onOrder: false,
-  },
-  {
-    id: 2,
-    title: "Заквасочные культуры для кефира",
-    img: zacvaski,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 3,
-    title: "Заквасочные культуры для сметаны",
-    img: zacvaska3,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 4,
-    title: "Заквасочные культуры для ряженки",
-    img: zacvaski,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Заквасочные культуры для творога",
-    img: zacvaska2,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Заквасочные культуры для биокефира",
-    img: zacvaska3,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Заквасочные культуры для айрана",
-    img: zacvaski,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Пробиотические культуры",
-    img: zacvaska2,
-    inStock: false,
-    onOrder: true,
   },
 ];
 
@@ -133,42 +80,42 @@ const starterProducts = [
 const bakeryProducts = [
   {
     id: 1,
-    title: "Хлебопекарные улучшители",
+    title: "Дрожи",
     img: bread,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
-    title: "Эмульгаторы (лецитин, DATEM, SSL)",
+    title: "Улучшители",
     img: bread,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
-    title: "Ферменты для теста",
+    title: "Маргарины",
     img: bread,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
-    title: "Разрыхлители и дрожжи",
+    title: "Посыпки , семена , орехи",
     img: bread,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
-    title: "Глютен пшеничный",
+    title: "Разрыхлители",
     img: bread,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
-    title: "Функциональные смеси",
+    title: "Сухие смеси",
     img: bread,
     inStock: false,
     onOrder: true,
@@ -190,182 +137,41 @@ const bakeryProducts = [
 ];
 
 // Сырные изделия
-const cheeseProducts = [
+const сonfectioneryProducts = [
   {
     id: 1,
-    title: "Сычужные ферменты",
-    img: bread,
+    title: "Сухие смеси",
+    img: nachinki,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
-    title: "Соли-плавители (цитраты, фосфаты)",
-    img: bread,
+    title: "Начинки",
+    img: nachinki,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
-    title: "Хлорид кальция для сыроделия",
-    img: bread,
+    title: "Ароматика",
+    img: glazur,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
-    title: "Защитные культуры",
-    img: bread,
+    title: "Глазури",
+    img: glazur,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
-    title: "Красители для сырных корок",
-    img: bread,
+    title: "Сливки",
+    img: milk,
     inStock: true,
     onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Антимикробные покрытия",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Ферменты для созревания",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Добавки для плавленых сыров",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-];
-
-// Пищевые красители
-const colorProducts = [
-  {
-    id: 1,
-    title: "Пищевые красители для напитков",
-    img: dye,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 2,
-    title: "Пищевые красители для выпечки",
-    img: dye2,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 3,
-    title: "Красители для молочных продуктов",
-    img: dye,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 4,
-    title: "Красители для кондитерских изделий",
-    img: dye2,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Натуральные пищевые красители",
-    img: dye,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Синтетические красители",
-    img: dye2,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Концентраты красителей",
-    img: dye,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Порошковые красители",
-    img: dye2,
-    inStock: false,
-    onOrder: true,
-  },
-];
-
-// Наполнители
-const fillerProducts = [
-  {
-    id: 1,
-    title: "Фруктовые наполнители",
-    img: napolnitel,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 2,
-    title: "Ягодные наполнители",
-    img: napolnitelKivi,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 3,
-    title: "Шоколадно-ореховые наполнители",
-    img: napolnitel,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 4,
-    title: "Карамельные наполнители",
-    img: napolnitelKivi,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Термостабильные наполнители",
-    img: napolnitel,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Жировые наполнители",
-    img: napolnitelKivi,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Гомогенные наполнители",
-    img: napolnitel,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Наполнители с кусочками",
-    img: napolnitelKivi,
-    inStock: false,
-    onOrder: true,
   },
 ];
 
@@ -373,232 +179,207 @@ const fillerProducts = [
 const horecaProducts = [
   {
     id: 1,
-    title: "Смеси специй для бургеров",
+    title: "Масла",
     img: burger,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
-    title: "Панировочные смеси и кляры",
+    title: "Жиры",
     img: burger2,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
-    title: "Соусы быстрого приготовления",
+    title: "Наггетсы",
     img: burger3,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
-    title: "Усилители вкуса и аромата",
+    title: "Картофельные дольки, фри, cтейки",
     img: burger,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
-    title: "Добавки для фритюра",
+    title: "Замороженные ягоды",
     img: burger2,
+    inStock: true,
+    onOrder: false,
+  },
+];
+
+// Консерванты
+const foodChemistryProducts = [
+  {
+    id: 1,
+    title: "Сорбат",
+    img: sorbat,
+    inStock: true,
+    onOrder: false,
+  },
+  { id: 2, title: "Фосфомикс", img: sorbat, inStock: false, onOrder: true },
+  { id: 3, title: "Карагинан", img: karaginan, inStock: true, onOrder: false },
+  {
+    id: 4,
+    title: "Аскорбиновая кислота",
+    img: karaginan,
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 5,
+    title: "Эмульгаторы",
+    img: sorbat,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
-    title: "Смеси для выпечки булочек",
-    img: burger3,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Маринады быстрого приготовления",
-    img: burger,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Функциональные добавки",
-    img: burger2,
-    inStock: false,
-    onOrder: true,
-  },
-];
-
-// Консерванты
-const preservativeProducts = [
-  {
-    id: 1,
-    title: "Низин - натуральный консервант",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  { id: 2, title: "Сорбат калия", img: bread, inStock: false, onOrder: true },
-  { id: 3, title: "Бензоат натрия", img: bread, inStock: true, onOrder: false },
-  {
-    id: 4,
-    title: "Натамицин для сыров",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Комплексные консервирующие смеси",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  { id: 6, title: "Антиоксиданты", img: bread, inStock: false, onOrder: true },
-  {
-    id: 7,
-    title: "Натуральные консерванты",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Консервирующие системы",
-    img: bread,
+    title: "Бензоат натрия",
+    img: karaginan,
     inStock: false,
     onOrder: true,
   },
 ];
 
 // Специи
-const spiceProducts = [
-  {
-    id: 1,
-    title: "Ванильные экстракты и стручки",
-    img: spec,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 2,
-    title: "Корица и кассия",
-    img: spec2,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 3,
-    title: "Мускатный орех и кардамон",
-    img: spec,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 4,
-    title: "Имбирь и куркума",
-    img: spec2,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Смеси для выпечки",
-    img: spec,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Ароматические травы и листья",
-    img: spec2,
-    inStock: false,
-    onOrder: true,
-  },
-  { id: 7, title: "Цельные специи", img: spec, inStock: true, onOrder: false },
-  { id: 8, title: "Молотые специи", img: spec2, inStock: false, onOrder: true },
-];
+// const spiceProducts = [
+//   {
+//     id: 1,
+//     title: "Ванильные экстракты и стручки",
+//     img: spec,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 2,
+//     title: "Корица и кассия",
+//     img: spec2,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   {
+//     id: 3,
+//     title: "Мускатный орех и кардамон",
+//     img: spec,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 4,
+//     title: "Имбирь и куркума",
+//     img: spec2,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   {
+//     id: 5,
+//     title: "Смеси для выпечки",
+//     img: spec,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 6,
+//     title: "Ароматические травы и листья",
+//     img: spec2,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   { id: 7, title: "Цельные специи", img: spec, inStock: true, onOrder: false },
+//   { id: 8, title: "Молотые специи", img: spec2, inStock: false, onOrder: true },
+// ];
 
-// Стабилизаторы
-const stabilizerProducts = [
-  {
-    id: 1,
-    title: "Каррагинаны для молочных продуктов",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 2,
-    title: "Ксантановая камедь",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 3,
-    title: "Гуаровая камедь",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 4,
-    title: "Пектины различной этерификации",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 5,
-    title: "Желатины пищевые",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 6,
-    title: "Стабилизаторы для йогуртов",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-  {
-    id: 7,
-    title: "Стабилизаторы для десертов",
-    img: bread,
-    inStock: true,
-    onOrder: false,
-  },
-  {
-    id: 8,
-    title: "Комплексные стабилизаторы",
-    img: bread,
-    inStock: false,
-    onOrder: true,
-  },
-];
+// // Стабилизаторы
+// const stabilizerProducts = [
+//   {
+//     id: 1,
+//     title: "Каррагинаны для молочных продуктов",
+//     img: bread,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 2,
+//     title: "Ксантановая камедь",
+//     img: bread,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   {
+//     id: 3,
+//     title: "Гуаровая камедь",
+//     img: bread,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 4,
+//     title: "Пектины различной этерификации",
+//     img: bread,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   {
+//     id: 5,
+//     title: "Желатины пищевые",
+//     img: bread,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 6,
+//     title: "Стабилизаторы для йогуртов",
+//     img: bread,
+//     inStock: false,
+//     onOrder: true,
+//   },
+//   {
+//     id: 7,
+//     title: "Стабилизаторы для десертов",
+//     img: bread,
+//     inStock: true,
+//     onOrder: false,
+//   },
+//   {
+//     id: 8,
+//     title: "Комплексные стабилизаторы",
+//     img: bread,
+//     inStock: false,
+//     onOrder: true,
+//   },
+// ];
 
 const productCategories = {
-  dairy: { title: "Молочная продукция", products: dairyProducts },
-  starter: { title: "Заквасочные культуры", products: starterProducts },
+  dairy: { title: "Молочное направление", products: dairyProducts },
+  "specialized-fats": {
+    title: "Специализированные жиры",
+    products: specializedFatsProducts,
+  },
   bakery: {
-    title: "Ингредиенты для хлебобулочных изделий",
+    title: "Хлебобулочные направления",
     products: bakeryProducts,
   },
-  cheese: {
-    title: "Ингредиенты для сырных изделий",
-    products: cheeseProducts,
+  confectionery: {
+    title: "Кондитерские направление",
+    products: сonfectioneryProducts,
   },
-  colors: { title: "Пищевые красители", products: colorProducts },
-  filler: { title: "Наполнители", products: fillerProducts },
   horeca: { title: "HoReCa", products: horecaProducts },
-  preservatives: {
-    title: "Консерванты",
-    products: preservativeProducts,
+  "food-chemistry": {
+    title: "Пищевая химия",
+    products: foodChemistryProducts,
   },
-  spices: { title: "Специи", products: spiceProducts },
-  stabilizers: { title: "Стабилизаторы", products: stabilizerProducts },
+
+  // colors: { title: "Пищевые красители", products: colorProducts },
+  // filler: { title: "Наполнители", products: fillerProducts },
+  // spices: { title: "Специи", products: spiceProducts },
+  // stabilizers: { title: "Стабилизаторы", products: stabilizerProducts },
 };
 
 type ProductCategoryKey = keyof typeof productCategories;
@@ -690,12 +471,12 @@ const ProductGrid = ({ category }: ProductGridProps) => {
 
 // Компоненты для каждой категории
 export const Dairy = () => <ProductGrid category="dairy" />;
-export const Starter = () => <ProductGrid category="starter" />;
+export const Starter = () => <ProductGrid category="specialized-fats" />;
 export const Bakery = () => <ProductGrid category="bakery" />;
-export const Cheese = () => <ProductGrid category="cheese" />;
-export const Colors = () => <ProductGrid category="colors" />;
-export const Filler = () => <ProductGrid category="filler" />;
+export const Confectionery = () => <ProductGrid category="confectionery" />;
 export const Horeca = () => <ProductGrid category="horeca" />;
-export const Preservatives = () => <ProductGrid category="preservatives" />;
-export const Spices = () => <ProductGrid category="spices" />;
-export const Stabilizers = () => <ProductGrid category="stabilizers" />;
+export const FoodChemistry = () => <ProductGrid category="food-chemistry" />;
+// export const Colors = () => <ProductGrid category="colors" />;
+// export const Filler = () => <ProductGrid category="filler" />;
+// export const Spices = () => <ProductGrid category="spices" />;
+// export const Stabilizers = () => <ProductGrid category="stabilizers" />;

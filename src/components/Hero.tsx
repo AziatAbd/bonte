@@ -102,7 +102,7 @@ export const HeroSection = () => {
           key={index}
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(${slide})`,
+            backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(${slide})`,
           }}
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{
