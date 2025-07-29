@@ -80,7 +80,7 @@ const specializedFatsProducts = [
 const bakeryProducts = [
   {
     id: 1,
-    title: "Дрожи",
+    title: "Дрожжи",
     img: bread,
     inStock: true,
     onOrder: false,
@@ -179,7 +179,7 @@ const сonfectioneryProducts = [
 const horecaProducts = [
   {
     id: 1,
-    title: "Масла",
+    title: "Профессиональные фритюрные масла",
     img: burger,
     inStock: true,
     onOrder: false,

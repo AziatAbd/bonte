@@ -9,7 +9,7 @@ import riha from "../assets/images/partners/riha.png";
 import milk from "../assets/images/partners/milk.jpeg";
 import jetiBaatyr from "../assets/images/partners/jeti-baatyr.png";
 import shinLine from "../assets/images/partners/shin-line.jpeg";
-import iceCream from "../assets/images/partners/ice-queen.jpeg";
+import iceCream from "../assets/images/partners/ice-queen.jpg";
 
 export const PartnersSection = () => {
   const partners = [

@@ -136,10 +136,10 @@ export const ContactSection = () => {
                       Телефон
                     </h3>
                     <p className="text-[#0C1D3499] font-[Helvetica]">
-                      Отдел продаж: +996 999 22 33 95
+                      Отдел закупа: +996 999 22 33 95
                     </p>
                     <p className="text-[#0C1D3499] font-[Helvetica]">
-                      Отдел закупа: +996 999 22 33 36
+                      Отдел продаж: +996 999 22 33 95
                     </p>
                     <p className="text-[#0C1D3499] font-[Helvetica]">
                       Бухгалтерия: +996 555 966 034

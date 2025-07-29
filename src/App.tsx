@@ -12,7 +12,7 @@ import {
   Starter,
 } from "./containers/products";
 import DairyDetail from "./containers/products/DairyDetail";
-import StarterDetail from "./containers/products/StarterDetail";
+import MilkFatReplacerDetail from "./containers/products/StarterDetail";
 import HorecaDetail from "./containers/products/HorecaDetail";
 import FoodChemistryDetail from "./containers/products/PreservativesDetail";
 import BakeryDetail from "./containers/products/BakeryDetail";
@@ -48,7 +48,7 @@ function App() {
           <Route path="specialized-fats" element={<Starter />} />
           <Route
             path="/catalog/specialized-fats/:productId"
-            element={<StarterDetail />}
+            element={<MilkFatReplacerDetail />}
           />
 
           <Route path="horeca" element={<Horeca />} />
