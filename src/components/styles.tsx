@@ -60,7 +60,7 @@ const StyledComponents = {
     hover?: boolean;
   }) => (
     <div
-      className={`bg-white rounded-lg shadow-md overflow-hidden relative min-h-[400px] w-[380px] flex flex-col justify-end ${
+      className={`bg-white rounded-lg shadow-md overflow-hidden relative min-h-[250px] sm:min-h-[400px] sm:w-[380px] flex flex-col justify-end ${
         hover
           ? "transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           : ""

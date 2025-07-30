@@ -61,8 +61,18 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">СВЯЗАТЬСЯ С НАМИ:</h3>
             <div className="space-y-2 text-gray-400 ">
-              <div>+996 500 00 00 20</div>
-              <div>info@basis-food.ru</div>
+              <div>
+                <p className="font-[Helvetica]">
+                  Отдел закупа: +996 999 22 33 95
+                </p>
+                <p className="font-[Helvetica]">
+                  Отдел продаж: +996 999 22 33 95
+                </p>
+                <p className="font-[Helvetica]">
+                  Бухгалтерия: +996 555 966 034
+                </p>
+              </div>
+              <div>Почта: bonte.m.a8.@gmail.com</div>
             </div>
           </div>
           <div>

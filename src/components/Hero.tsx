@@ -136,7 +136,7 @@ export const HeroSection = () => {
         >
           <div>
             <motion.h1
-              className="text-4xl md:text-[86px] mb-6 uppercase font-bold font-[Bebas Neue]"
+              className="text-2xl md:text-[86px] mb-6 uppercase font-bold font-[Bebas Neue]"
               variants={itemVariants}
             >
               ПОСТАВКА <br /> СЫРЬЯ ДЛЯ ПИЩЕВОЙ ПРОМЫШЛЕННОСТИ

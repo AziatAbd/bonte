@@ -4,6 +4,7 @@ import { X, Menu } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { smoothScrollToId } from "../utils/smoothScrollToId";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../../bonte.svg";
 
 export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
               mainPage ? "sm:text-white" : "text-black"
             }`}
           >
-            BONTE
+            <img src={Logo} />
           </motion.div>
 
           {/* Навигация — desktop */}
@@ -90,6 +91,7 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            className="hidden md:flex"
           >
             <Button variant="secondary" size="sm" className="!text-black">
               СВЯЗАТЬСЯ С НАМИ

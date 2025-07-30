@@ -42,7 +42,7 @@ export default function FoodIndustryLanding() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       <HeroSection />
       <PartnersSection />
       <ProductsSection />

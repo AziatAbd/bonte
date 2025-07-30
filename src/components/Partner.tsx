@@ -103,7 +103,7 @@ export const PartnersSection = () => {
           </motion.h2>
 
           <motion.div
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-8"
+            className="grid justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-8"
             variants={partnersGridVariants}
           >
             {partners.map((partner, index) => (

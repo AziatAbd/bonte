@@ -70,7 +70,7 @@ export const VideoSection = () => {
           variants={containerVariants}
         >
           <motion.div
-            className="bg-[#FFF09F] px-[64px] py-[50px] rounded-lg w-full h-full flex items-center"
+            className="bg-[#FFF09F] px-5 sm:px-[64px] py-4 sm:py-[50px] rounded-lg w-full h-full flex items-center"
             variants={leftSideVariants}
             whileHover={{
               scale: 1.02,
@@ -78,7 +78,7 @@ export const VideoSection = () => {
             }}
           >
             <motion.h2
-              className="text-4xl font-bold mb-8"
+              className="text-2xl sm:text-4xl font-bold mb-8"
               variants={titleVariants}
             >
               Познакомьтесь с нами поближе посмотрев видеоролик{" "}
