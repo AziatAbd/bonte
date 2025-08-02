@@ -1,7 +1,10 @@
-const images = [
-  "https://ingredients.kg/uploads/catalog/3985395fa3ff3716393a5e4deedf7958.jpeg",
-  "https://ingredients.kg/uploads/catalog/11d57783500c194adad117ed01544aa3.jpg",
-];
+import fosfor from "../../assets/images/himia/fosfor-v2.png";
+import askorbinka from "../../assets/images/himia/askorbinka.png";
+import benzot from "../../assets/images/himia/benzot.png";
+import emulgator from "../../assets/images/himia/emulgator.png";
+import karaginan from "../../assets/images/himia/karaginan-v2.png";
+
+const images = [fosfor, askorbinka, benzot, emulgator, karaginan];
 
 const sections = [
   {

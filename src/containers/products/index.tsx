@@ -1,15 +1,32 @@
 import zacvaska2 from "../../assets/images/products/ZMG_Wikipedia.png";
 import bread from "../../assets/images/products/bread.png";
 import sorbat from "../../assets/images/products/sorbat.jpg";
-import karaginan from "../../assets/images/products/karaginan.jpg";
-import burger from "../../assets/images/products/burger.jpg";
-import burger2 from "../../assets/images/products/burger2.jpg";
-import burger3 from "../../assets/images/products/burger3.jpg";
 import milk from "../../assets/images/products/milk.png";
 import milk2 from "../../assets/images/products/milk2.jpg";
 import nachinki from "../../assets/images/products/nachinki.jpg";
 import glazur from "../../assets/images/products/glazur.jpg";
 import { useNavigate } from "react-router-dom";
+import fosfor from "../../assets/images/himia/fosfor-v2.png";
+import askorbinka from "../../assets/images/himia/askorbinka.png";
+import benzot from "../../assets/images/himia/benzot.png";
+import emulgator from "../../assets/images/himia/emulgator.png";
+import karaginan from "../../assets/images/himia/karaginan-v2.png";
+import aromat from "../../assets/images/milk/aromat.png";
+import conser from "../../assets/images/milk/conser.png";
+import ferment from "../../assets/images/milk/ferment.png";
+import stabil from "../../assets/images/milk/stabil.png";
+import stabils from "../../assets/images/milk/stabils.png";
+import zmh from "../../assets/images/milk/zmh.png";
+import fat from "../../assets/images/heroca/fat.png";
+import ice from "../../assets/images/heroca/ice.png";
+import nuggets from "../../assets/images/heroca/nuggets.png";
+import oil from "../../assets/images/heroca/oil.png";
+import potate from "../../assets/images/heroca/potate.png";
+import drozh from "../../assets/images/bread/drozh.png";
+import Boil from "../../assets/images/bread/oil.png";
+import oreh from "../../assets/images/bread/oreh.png";
+import vkus from "../../assets/images/bread/vkus.png";
+import rasryh from "../../assets/images/bread/0287a6d8-5b3e-462e-8e71-ec5165f317a0.png";
 
 // Молочная продукция
 const dairyProducts = [
@@ -23,39 +40,39 @@ const dairyProducts = [
   {
     id: 2,
     title: "Стабилизаторы",
-    img: milk2,
+    img: stabils,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
     title: "Ароматизаторы",
-    img: milk,
+    img: aromat,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
     title: "Консерванты",
-    img: milk2,
+    img: conser,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
     title: "Ферменты",
-    img: milk,
+    img: ferment,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
     title: "Заменитель молочного жира",
-    img: milk2,
+    img: zmh,
     inStock: false,
     onOrder: true,
   },
-  { id: 7, title: "СОМ", img: milk, inStock: true, onOrder: false },
+  { id: 7, title: "СОМ", img: stabil, inStock: true, onOrder: false },
   {
     id: 8,
     title: "Сыворотка",
@@ -81,14 +98,14 @@ const bakeryProducts = [
   {
     id: 1,
     title: "Дрожжи",
-    img: bread,
+    img: drozh,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
     title: "Улучшители",
-    img: bread,
+    img: vkus,
     inStock: false,
     onOrder: true,
   },
@@ -102,21 +119,21 @@ const bakeryProducts = [
   {
     id: 4,
     title: "Посыпки , семена , орехи",
-    img: bread,
+    img: oreh,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
     title: "Разрыхлители",
-    img: bread,
+    img: rasryh,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
     title: "Сухие смеси",
-    img: bread,
+    img: Boil,
     inStock: false,
     onOrder: true,
   },
@@ -180,35 +197,35 @@ const horecaProducts = [
   {
     id: 1,
     title: "Профессиональные фритюрные масла",
-    img: burger,
+    img: oil,
     inStock: true,
     onOrder: false,
   },
   {
     id: 2,
     title: "Жиры",
-    img: burger2,
+    img: fat,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
     title: "Наггетсы",
-    img: burger3,
+    img: nuggets,
     inStock: true,
     onOrder: false,
   },
   {
     id: 4,
     title: "Картофельные дольки, фри, cтейки",
-    img: burger,
+    img: potate,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
     title: "Замороженные ягоды",
-    img: burger2,
+    img: ice,
     inStock: true,
     onOrder: false,
   },
@@ -223,26 +240,26 @@ const foodChemistryProducts = [
     inStock: true,
     onOrder: false,
   },
-  { id: 2, title: "Фосфомикс", img: sorbat, inStock: false, onOrder: true },
+  { id: 2, title: "Фосфомикс", img: fosfor, inStock: false, onOrder: true },
   { id: 3, title: "Карагинан", img: karaginan, inStock: true, onOrder: false },
   {
     id: 4,
     title: "Аскорбиновая кислота",
-    img: karaginan,
+    img: askorbinka,
     inStock: false,
     onOrder: true,
   },
   {
     id: 5,
     title: "Эмульгаторы",
-    img: sorbat,
+    img: emulgator,
     inStock: true,
     onOrder: false,
   },
   {
     id: 6,
     title: "Бензоат натрия",
-    img: karaginan,
+    img: benzot,
     inStock: false,
     onOrder: true,
   },

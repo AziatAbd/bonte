@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { ProductCard } from "./ProductCard";
 import { Container } from "./styles";
-import milk from "../assets/images/products/milk.png";
-import burger from "../assets/images/products/burger.jpg";
-import cakes from "../assets/images/products/cakes.jpg";
-import spec from "../assets/images/products/karaginan.jpg";
-import bread from "../assets/images/products/bread.png";
-import dye from "../assets/images/products/ZMG_Wikipedia.png";
+import milk from "../assets/images/products/milk-v2.png";
+import burger from "../assets/images/products/horeca-v2.png";
+import cakes from "../assets/images/products/cond-v2.png";
+import spec from "../assets/images/products/himia-v2.png";
+import bread from "../assets/images/products/bread-v2.png";
+import dye from "../assets/images/products/fat-v2.png";
 
 const products = [
   {

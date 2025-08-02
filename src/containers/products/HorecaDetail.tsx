@@ -1,6 +1,6 @@
-import burger from "../../assets/images/products/burger.jpg";
-import burger2 from "../../assets/images/products/burger2.jpg";
-import burger3 from "../../assets/images/products/burger3.jpg";
+import burger from "../../assets/images/heroca/nuggets.png";
+import burger2 from "../../assets/images/heroca/ice.png";
+import burger3 from "../../assets/images/heroca/potate.png";
 import { useState } from "react";
 
 const sections = [
