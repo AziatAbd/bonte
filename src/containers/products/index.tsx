@@ -1,5 +1,4 @@
 import zacvaska2 from "../../assets/images/products/ZMG_Wikipedia.png";
-import bread from "../../assets/images/products/bread.png";
 import sorbat from "../../assets/images/products/sorbat.jpg";
 import milk from "../../assets/images/products/milk.png";
 import milk2 from "../../assets/images/products/milk2.jpg";
@@ -23,10 +22,15 @@ import nuggets from "../../assets/images/heroca/nuggets.png";
 import oil from "../../assets/images/heroca/oil.png";
 import potate from "../../assets/images/heroca/potate.png";
 import drozh from "../../assets/images/bread/drozh.png";
-import Boil from "../../assets/images/bread/oil.png";
 import oreh from "../../assets/images/bread/oreh.png";
 import vkus from "../../assets/images/bread/vkus.png";
 import rasryh from "../../assets/images/bread/0287a6d8-5b3e-462e-8e71-ec5165f317a0.png";
+import updatingBread from "../../assets/images/bread/updating-breadjpg.jpg";
+import margarine from "../../assets/images/bread/margarine.jpg";
+import smes from "../../assets/images/bread/smes.jpg";
+import conditer from "../../assets/images/conditer/conditer.jpg";
+import nachinki2 from "../../assets/images/conditer/nachinka.jpg";
+import aromat2 from "../../assets/images/products/himia-v2.png";
 
 // Молочная продукция
 const dairyProducts = [
@@ -112,7 +116,7 @@ const bakeryProducts = [
   {
     id: 3,
     title: "Маргарины",
-    img: bread,
+    img: margarine,
     inStock: true,
     onOrder: false,
   },
@@ -133,27 +137,26 @@ const bakeryProducts = [
   {
     id: 6,
     title: "Сухие смеси",
-    img: Boil,
+    img: conditer,
     inStock: false,
     onOrder: true,
   },
   {
     id: 7,
     title: "Улучшители для выпечки",
-    img: bread,
+    img: updatingBread,
     inStock: true,
     onOrder: false,
   },
   {
     id: 8,
     title: "Смеси для хлеба",
-    img: bread,
+    img: smes,
     inStock: false,
     onOrder: true,
   },
 ];
 
-// Сырные изделия
 const сonfectioneryProducts = [
   {
     id: 1,
@@ -165,14 +168,14 @@ const сonfectioneryProducts = [
   {
     id: 2,
     title: "Начинки",
-    img: nachinki,
+    img: nachinki2,
     inStock: false,
     onOrder: true,
   },
   {
     id: 3,
     title: "Ароматика",
-    img: glazur,
+    img: aromat2,
     inStock: true,
     onOrder: false,
   },
@@ -426,14 +429,14 @@ const ProductGrid = ({ category }: ProductGridProps) => {
         {categoryData.products.map((product, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer w-[270px]"
             onClick={() => handleProductClick(product)}
           >
             <div className="relative">
               <img
                 src={product.img}
                 alt={product.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain"
               />
             </div>
 

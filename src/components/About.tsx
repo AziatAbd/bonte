@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Container } from "./styles";
-import firstAboutImg from "../assets/images/about/about.png";
+import firstAboutImg from "../assets/images/about/about.jpg";
 import secondAboutImg from "../assets/images/about/about-2.png";
 
 export const AboutSection = () => {
@@ -86,9 +86,7 @@ export const AboutSection = () => {
               className="text-4xl font-bold mb-6 text-gray-900 uppercase"
               variants={titleVariants}
             >
-              Коротко
-              <br />
-              <span className="text-[#FFD35B]">о bonte</span>
+              О нас
             </motion.h2>
 
             <motion.div

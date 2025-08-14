@@ -4,7 +4,7 @@ import { Container } from "./styles";
 import milk from "../assets/images/products/milk-v2.png";
 import burger from "../assets/images/products/horeca-v2.png";
 import cakes from "../assets/images/products/cond-v2.png";
-import spec from "../assets/images/products/himia-v2.png";
+import spec from "../assets/images/products/product-himia.jpg";
 import bread from "../assets/images/products/bread-v2.png";
 import dye from "../assets/images/products/fat-v2.png";
 
