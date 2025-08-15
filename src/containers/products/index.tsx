@@ -2,7 +2,6 @@ import zacvaska2 from "../../assets/images/products/ZMG_Wikipedia.png";
 import sorbat from "../../assets/images/products/sorbat.jpg";
 import milk from "../../assets/images/products/milk.png";
 import milk2 from "../../assets/images/products/milk2.jpg";
-import nachinki from "../../assets/images/products/nachinki.jpg";
 import glazur from "../../assets/images/products/glazur.jpg";
 import { useNavigate } from "react-router-dom";
 import fosfor from "../../assets/images/himia/fosfor-v2.png";
@@ -13,9 +12,7 @@ import karaginan from "../../assets/images/himia/karaginan-v2.png";
 import aromat from "../../assets/images/milk/aromat.png";
 import conser from "../../assets/images/milk/conser.png";
 import ferment from "../../assets/images/milk/ferment.png";
-import stabil from "../../assets/images/milk/stabil.png";
 import stabils from "../../assets/images/milk/stabils.png";
-import zmh from "../../assets/images/milk/zmh.png";
 import fat from "../../assets/images/heroca/fat.png";
 import ice from "../../assets/images/heroca/ice.png";
 import nuggets from "../../assets/images/heroca/nuggets.png";
@@ -24,13 +21,17 @@ import potate from "../../assets/images/heroca/potate.png";
 import drozh from "../../assets/images/bread/drozh.png";
 import oreh from "../../assets/images/bread/oreh.png";
 import vkus from "../../assets/images/bread/vkus.png";
-import rasryh from "../../assets/images/bread/0287a6d8-5b3e-462e-8e71-ec5165f317a0.png";
 import updatingBread from "../../assets/images/bread/updating-breadjpg.jpg";
 import margarine from "../../assets/images/bread/margarine.jpg";
 import smes from "../../assets/images/bread/smes.jpg";
 import conditer from "../../assets/images/conditer/conditer.jpg";
 import nachinki2 from "../../assets/images/conditer/nachinka.jpg";
 import aromat2 from "../../assets/images/products/himia-v2.png";
+import suhieSmesi from "../../assets/images/conditer/suhie-smesi.jpg";
+import slivki from "../../assets/images/conditer/slivki.jpg";
+import zamMoloko from "../../assets/images/milk/zam-moloko.jpg";
+import rasryh from "../../assets/images/milk/razryh.jpg";
+import COM from "../../assets/images/conditer/COM.jpg";
 
 // Молочная продукция
 const dairyProducts = [
@@ -72,11 +73,11 @@ const dairyProducts = [
   {
     id: 6,
     title: "Заменитель молочного жира",
-    img: zmh,
+    img: zamMoloko,
     inStock: false,
     onOrder: true,
   },
-  { id: 7, title: "СОМ", img: stabil, inStock: true, onOrder: false },
+  { id: 7, title: "СОМ", img: COM, inStock: true, onOrder: false },
   {
     id: 8,
     title: "Сыворотка",
@@ -137,7 +138,7 @@ const bakeryProducts = [
   {
     id: 6,
     title: "Сухие смеси",
-    img: conditer,
+    img: suhieSmesi,
     inStock: false,
     onOrder: true,
   },
@@ -161,7 +162,7 @@ const сonfectioneryProducts = [
   {
     id: 1,
     title: "Сухие смеси",
-    img: nachinki,
+    img: conditer,
     inStock: true,
     onOrder: false,
   },
@@ -189,7 +190,7 @@ const сonfectioneryProducts = [
   {
     id: 5,
     title: "Сливки",
-    img: milk,
+    img: slivki,
     inStock: true,
     onOrder: false,
   },
