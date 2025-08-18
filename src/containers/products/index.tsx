@@ -32,8 +32,12 @@ import slivki from "../../assets/images/conditer/slivki.jpg";
 import zamMoloko from "../../assets/images/milk/zam-moloko.jpg";
 import rasryh from "../../assets/images/milk/razryh.jpg";
 import COM from "../../assets/images/conditer/COM.jpg";
+import glazuri from "../../assets/images/fats/glazuri.jpg";
+import nachinkaChocolate from "../../assets/images/fats/nachinki-dlya-chocolate.jpg";
+import nachinkaTesta from "../../assets/images/fats/nachinki-dlya-testa.jpg";
+import sugar from "../../assets/images/fats/sugar.jpg";
+import testo from "../../assets/images/fats/testo.jpg";
 
-// Молочная продукция
 const dairyProducts = [
   {
     id: 1,
@@ -87,7 +91,6 @@ const dairyProducts = [
   },
 ];
 
-// Заквасочные культуры
 const specializedFatsProducts = [
   {
     id: 1,
@@ -96,9 +99,43 @@ const specializedFatsProducts = [
     inStock: true,
     onOrder: false,
   },
+  {
+    id: 2,
+    title: "Тесто",
+    img: testo,
+    inStock: true,
+    onOrder: false,
+  },
+  {
+    id: 3,
+    title: "Начинки для мучных кондитерских изделий",
+    img: nachinkaTesta,
+    inStock: true,
+    onOrder: false,
+  },
+  {
+    id: 4,
+    title: "Начинки для шоколадных кондитерских изделий",
+    img: nachinkaChocolate,
+    inStock: true,
+    onOrder: false,
+  },
+  {
+    id: 5,
+    title: "Глазури",
+    img: glazuri,
+    inStock: true,
+    onOrder: false,
+  },
+  {
+    id: 6,
+    title: "Сахаристые изделия",
+    img: sugar,
+    inStock: true,
+    onOrder: false,
+  },
 ];
 
-// Хлебобулочные изделия
 const bakeryProducts = [
   {
     id: 1,
@@ -196,7 +233,6 @@ const сonfectioneryProducts = [
   },
 ];
 
-// HoReCa
 const horecaProducts = [
   {
     id: 1,
@@ -235,7 +271,6 @@ const horecaProducts = [
   },
 ];
 
-// Консерванты
 const foodChemistryProducts = [
   {
     id: 1,
