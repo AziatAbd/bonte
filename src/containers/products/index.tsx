@@ -33,6 +33,7 @@ import zamMoloko from "../../assets/images/milk/zam-moloko.jpg";
 import rasryh from "../../assets/images/milk/razryh.jpg";
 import COM from "../../assets/images/conditer/COM.jpg";
 
+// Молочная продукция
 const dairyProducts = [
   {
     id: 1,
@@ -86,6 +87,7 @@ const dairyProducts = [
   },
 ];
 
+// Заквасочные культуры
 const specializedFatsProducts = [
   {
     id: 1,
@@ -96,6 +98,7 @@ const specializedFatsProducts = [
   },
 ];
 
+// Хлебобулочные изделия
 const bakeryProducts = [
   {
     id: 1,
@@ -193,6 +196,7 @@ const сonfectioneryProducts = [
   },
 ];
 
+// HoReCa
 const horecaProducts = [
   {
     id: 1,
@@ -231,6 +235,7 @@ const horecaProducts = [
   },
 ];
 
+// Консерванты
 const foodChemistryProducts = [
   {
     id: 1,
@@ -283,6 +288,11 @@ const productCategories = {
     title: "Пищевая химия",
     products: foodChemistryProducts,
   },
+
+  // colors: { title: "Пищевые красители", products: colorProducts },
+  // filler: { title: "Наполнители", products: fillerProducts },
+  // spices: { title: "Специи", products: spiceProducts },
+  // stabilizers: { title: "Стабилизаторы", products: stabilizerProducts },
 };
 
 type ProductCategoryKey = keyof typeof productCategories;
@@ -315,16 +325,16 @@ const ProductGrid = ({ category }: ProductGridProps) => {
             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer w-[270px]"
             onClick={() => handleProductClick(product)}
           >
-            <div className="relative h-48 overflow-hidden">
+            <div className="relative">
               <img
                 src={product.img}
                 alt={product.title}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                className="w-full h-48 object-contain"
               />
             </div>
 
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800 line-clamp-2">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">
                 {product.title}
               </h3>
 
@@ -336,10 +346,16 @@ const ProductGrid = ({ category }: ProductGridProps) => {
                       : "bg-gray-100 text-gray-500"
                   }`}
                 >
-                  {product.inStock ? "В наличии" : "Нет в наличии"}
+                  {product.inStock ? "В наличии" : "В наличии"}
                 </span>
 
-                <span className="px-2 py-1 rounded bg-yellow-100 text-yellow-700">
+                <span
+                  className={`px-2 py-1 rounded ${
+                    product.onOrder
+                      ? "bg-yellow-100 text-yellow-700"
+                      : "bg-yellow-100 text-yellow-700"
+                  }`}
+                >
                   На заказ
                 </span>
               </div>
