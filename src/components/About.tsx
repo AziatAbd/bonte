@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Container } from "./styles";
 import firstAboutImg from "../assets/images/about/about.jpg";
-import secondAboutImg from "../assets/images/about/about-2.png";
+// import secondAboutImg from "../assets/images/about/about-2.png";
 
 export const AboutSection = () => {
   const containerVariants = {
@@ -129,7 +129,7 @@ export const AboutSection = () => {
         </Container>
       </section>
 
-      <section className="py-10 sm:p-20 bg-[#0C1D34]">
+      {/* <section className="py-10 sm:p-20 bg-[#0C1D34]">
         <motion.div
           className="mt-16 text-white p-4"
           variants={rowVariants}
@@ -242,7 +242,7 @@ export const AboutSection = () => {
             ))}
           </motion.div>
         </motion.div>
-      </section>
+      </section> */}
     </>
   );
 };

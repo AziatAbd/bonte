@@ -1,10 +1,10 @@
-import burger from "../../assets/images/heroca/nuggets.png";
+import nuggets from "../../assets/images/heroca/nuggets.jpg";
 import burger2 from "../../assets/images/heroca/ice.png";
 import burger3 from "../../assets/images/heroca/potate.png";
 import { useState } from "react";
 
 const sections = [
-  { title: "Смеси специй для бургеров и мясных блюд", img: burger },
+  { title: "Смеси специй для бургеров и мясных блюд", img: nuggets },
   { title: "Панировочные смеси и кляры", img: burger2 },
   { title: "Соусы и маринады быстрого приготовления", img: burger3 },
   { title: "Усилители вкуса и аромата" },

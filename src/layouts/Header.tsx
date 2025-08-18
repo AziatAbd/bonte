@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Button, Container } from "../components/styles";
 import { X, Menu } from "lucide-react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { smoothScrollToId } from "../utils/smoothScrollToId";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "../../bonte.svg";
+import BlueLogo from "../assets/blue.svg";
+import WhiteLogo from "../assets/logo.svg";
 
 export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
+  const location = useLocation();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -16,6 +19,10 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
     smoothScrollToId(id);
     setIsMenuOpen(false);
   };
+
+  console.log(location.pathname);
+
+  const isMainPage = location.pathname === "/";
 
   return (
     <motion.header
@@ -34,11 +41,9 @@ export const Header = ({ mainPage = false }: { mainPage?: boolean }) => {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className={`text-[55px] font-[700] font-bebas ${
-              mainPage ? "sm:text-white" : "text-black"
-            }`}
+            className="w-[150px]"
           >
-            <img src={Logo} />
+            <img src={!isMainPage ? BlueLogo : WhiteLogo} />
           </motion.div>
 
           {/* Навигация — desktop */}

@@ -15,7 +15,7 @@ import ferment from "../../assets/images/milk/ferment.png";
 import stabils from "../../assets/images/milk/stabils.png";
 import fat from "../../assets/images/heroca/fat.png";
 import ice from "../../assets/images/heroca/ice.png";
-import nuggets from "../../assets/images/heroca/nuggets.png";
+import nuggets from "../../assets/images/heroca/nuggets.jpg";
 import oil from "../../assets/images/heroca/oil.png";
 import potate from "../../assets/images/heroca/potate.png";
 import drozh from "../../assets/images/bread/drozh.png";
@@ -33,7 +33,6 @@ import zamMoloko from "../../assets/images/milk/zam-moloko.jpg";
 import rasryh from "../../assets/images/milk/razryh.jpg";
 import COM from "../../assets/images/conditer/COM.jpg";
 
-// Молочная продукция
 const dairyProducts = [
   {
     id: 1,
@@ -87,7 +86,6 @@ const dairyProducts = [
   },
 ];
 
-// Заквасочные культуры
 const specializedFatsProducts = [
   {
     id: 1,
@@ -98,7 +96,6 @@ const specializedFatsProducts = [
   },
 ];
 
-// Хлебобулочные изделия
 const bakeryProducts = [
   {
     id: 1,
@@ -196,7 +193,6 @@ const сonfectioneryProducts = [
   },
 ];
 
-// HoReCa
 const horecaProducts = [
   {
     id: 1,
@@ -235,7 +231,6 @@ const horecaProducts = [
   },
 ];
 
-// Консерванты
 const foodChemistryProducts = [
   {
     id: 1,
@@ -269,114 +264,6 @@ const foodChemistryProducts = [
   },
 ];
 
-// Специи
-// const spiceProducts = [
-//   {
-//     id: 1,
-//     title: "Ванильные экстракты и стручки",
-//     img: spec,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 2,
-//     title: "Корица и кассия",
-//     img: spec2,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   {
-//     id: 3,
-//     title: "Мускатный орех и кардамон",
-//     img: spec,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 4,
-//     title: "Имбирь и куркума",
-//     img: spec2,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   {
-//     id: 5,
-//     title: "Смеси для выпечки",
-//     img: spec,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 6,
-//     title: "Ароматические травы и листья",
-//     img: spec2,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   { id: 7, title: "Цельные специи", img: spec, inStock: true, onOrder: false },
-//   { id: 8, title: "Молотые специи", img: spec2, inStock: false, onOrder: true },
-// ];
-
-// // Стабилизаторы
-// const stabilizerProducts = [
-//   {
-//     id: 1,
-//     title: "Каррагинаны для молочных продуктов",
-//     img: bread,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 2,
-//     title: "Ксантановая камедь",
-//     img: bread,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   {
-//     id: 3,
-//     title: "Гуаровая камедь",
-//     img: bread,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 4,
-//     title: "Пектины различной этерификации",
-//     img: bread,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   {
-//     id: 5,
-//     title: "Желатины пищевые",
-//     img: bread,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 6,
-//     title: "Стабилизаторы для йогуртов",
-//     img: bread,
-//     inStock: false,
-//     onOrder: true,
-//   },
-//   {
-//     id: 7,
-//     title: "Стабилизаторы для десертов",
-//     img: bread,
-//     inStock: true,
-//     onOrder: false,
-//   },
-//   {
-//     id: 8,
-//     title: "Комплексные стабилизаторы",
-//     img: bread,
-//     inStock: false,
-//     onOrder: true,
-//   },
-// ];
-
 const productCategories = {
   dairy: { title: "Молочное направление", products: dairyProducts },
   "specialized-fats": {
@@ -396,11 +283,6 @@ const productCategories = {
     title: "Пищевая химия",
     products: foodChemistryProducts,
   },
-
-  // colors: { title: "Пищевые красители", products: colorProducts },
-  // filler: { title: "Наполнители", products: fillerProducts },
-  // spices: { title: "Специи", products: spiceProducts },
-  // stabilizers: { title: "Стабилизаторы", products: stabilizerProducts },
 };
 
 type ProductCategoryKey = keyof typeof productCategories;
@@ -433,16 +315,16 @@ const ProductGrid = ({ category }: ProductGridProps) => {
             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer w-[270px]"
             onClick={() => handleProductClick(product)}
           >
-            <div className="relative">
+            <div className="relative h-48 overflow-hidden">
               <img
                 src={product.img}
                 alt={product.title}
-                className="w-full h-48 object-contain"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
 
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 line-clamp-2">
                 {product.title}
               </h3>
 
@@ -454,16 +336,10 @@ const ProductGrid = ({ category }: ProductGridProps) => {
                       : "bg-gray-100 text-gray-500"
                   }`}
                 >
-                  {product.inStock ? "В наличии" : "В наличии"}
+                  {product.inStock ? "В наличии" : "Нет в наличии"}
                 </span>
 
-                <span
-                  className={`px-2 py-1 rounded ${
-                    product.onOrder
-                      ? "bg-yellow-100 text-yellow-700"
-                      : "bg-yellow-100 text-yellow-700"
-                  }`}
-                >
+                <span className="px-2 py-1 rounded bg-yellow-100 text-yellow-700">
                   На заказ
                 </span>
               </div>
