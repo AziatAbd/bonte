@@ -32,7 +32,7 @@ import slivki from "../../assets/images/conditer/slivki.jpg";
 import zamMoloko from "../../assets/images/milk/zam-moloko.jpg";
 import rasryh from "../../assets/images/milk/razryh.jpg";
 import COM from "../../assets/images/conditer/COM.jpg";
-import glazuri from "../../assets/images/fats/glazuri.jpg";
+import glazuri from "../../assets/images/fats/glazur-spec-fat.jpg";
 import nachinkaChocolate from "../../assets/images/fats/nachinki-dlya-chocolate.jpg";
 import nachinkaTesta from "../../assets/images/fats/nachinki-dlya-testa.jpg";
 import sugar from "../../assets/images/fats/sugar.jpg";
