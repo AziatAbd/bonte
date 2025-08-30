@@ -1,6 +1,6 @@
 import bread from "../../assets/images/products/bread.png";
 
-const BakeryDetail = () => {
+const Yeast = () => {
   return (
     <main className="flex-1 p-10">
       <h1 className="text-xl font-medium mb-4">
@@ -47,4 +47,4 @@ const BakeryDetail = () => {
   );
 };
 
-export default BakeryDetail;
+export default Yeast;

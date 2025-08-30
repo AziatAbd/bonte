@@ -1,4 +1,4 @@
-const CheeseDetail = () => {
+const Fillings = () => {
   return (
     <main className="flex-1 p-10">
       <h1 className="text-xl font-medium mb-4">
@@ -36,4 +36,4 @@ const CheeseDetail = () => {
   );
 };
 
-export default CheeseDetail;
+export default Fillings;

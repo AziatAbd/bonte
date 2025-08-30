@@ -12,7 +12,7 @@ const sections = [
   { title: "Готовые смеси для выпечки булочек и хлеба" },
 ];
 
-const HorecaDetail = () => {
+const PotatoWedgesFriesSteaks = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -89,4 +89,4 @@ const HorecaDetail = () => {
   );
 };
 
-export default HorecaDetail;
+export default PotatoWedgesFriesSteaks;

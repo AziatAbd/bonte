@@ -11,7 +11,7 @@ const sections = [
   { title: "Функциональные молочные добавки" },
 ];
 
-const DairyDetail = () => {
+const Preservatives = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -90,4 +90,4 @@ const DairyDetail = () => {
   );
 };
 
-export default DairyDetail;
+export default Preservatives;

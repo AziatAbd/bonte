@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const sections = [{ title: "Заменитель молочного жира", img: zacvaski }];
 
-const MilkFatReplacerDetail = () => {
+const CoatingFat = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
@@ -124,4 +124,4 @@ const MilkFatReplacerDetail = () => {
   );
 };
 
-export default MilkFatReplacerDetail;
+export default CoatingFat;
