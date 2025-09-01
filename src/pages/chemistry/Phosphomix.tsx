@@ -1,14 +1,9 @@
 import fosfor from "../../assets/images/himia/fosfor-v2.png";
-import askorbinka from "../../assets/images/himia/askorbinka.png";
-import benzot from "../../assets/images/himia/benzot.png";
-import emulgator from "../../assets/images/himia/emulgator.png";
-import karaginan from "../../assets/images/himia/karaginan-v2.png";
-
-const images = [fosfor, askorbinka, benzot, emulgator, karaginan];
 
 const sections = [
   {
     title: "Пищевая химия",
+    image: fosfor,
     description: (
       <>
         <p>
@@ -33,19 +28,6 @@ const sections = [
       </>
     ),
   },
-  {
-    title: "Основные продукты",
-    description: (
-      <ul className="list-disc list-inside space-y-1">
-        <li>Сорбат калия (E202) - универсальный консервант</li>
-        <li>Фосфомикс - стабилизирующая смесь фосфатов</li>
-        <li>Бензоат натрия (E211)</li>
-        <li>Цитрат натрия (E331)</li>
-        <li>Полифосфаты для мясной промышленности</li>
-        <li>Антиоксидантные системы</li>
-      </ul>
-    ),
-  },
 ];
 
 const Phosphomix = () => {
@@ -58,25 +40,21 @@ const Phosphomix = () => {
       {sections.map((section, i) => (
         <div
           key={section.title}
-          className={`flex gap-8 items-start ${
-            i % 2 === 0 ? "flex-row" : "flex-row-reverse"
+          className={`flex flex-col md:flex-row gap-8 items-start ${
+            i % 2 !== 0 ? "md:flex-row-reverse" : ""
           }`}
         >
-          {images[i] && (
+          {section.image && (
             <img
-              src={images[i]}
+              src={section.image}
               alt={section.title}
-              className="rounded shadow-md w-[300px] md:w-[350px] object-cover"
+              className="rounded shadow-md w-full md:w-[350px] object-cover"
             />
           )}
 
           <div className="flex-1">
-            <div
-              className={`transition-[max-height] duration-500 ease-in-out mb-4`}
-            >
-              <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
-              <div>{section.description}</div>
-            </div>
+            <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
+            <div className="mb-4">{section.description}</div>
 
             <a
               href="https://wa.me/+996999223395"

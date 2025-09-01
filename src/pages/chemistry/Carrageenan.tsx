@@ -1,48 +1,42 @@
-import fosfor from "../../assets/images/himia/fosfor-v2.png";
-import askorbinka from "../../assets/images/himia/askorbinka.png";
-import benzot from "../../assets/images/himia/benzot.png";
-import emulgator from "../../assets/images/himia/emulgator.png";
-import karaginan from "../../assets/images/himia/karaginan-v2.png";
+import carrageenanImg from "../../assets/images/himia/karaginan-v2.png";
 
-const images = [fosfor, askorbinka, benzot, emulgator, karaginan];
+const images = [carrageenanImg];
 
 const sections = [
   {
-    title: "Пищевая химия",
+    title: "Карагинан – натуральный загуститель и стабилизатор",
     description: (
       <>
         <p>
-          Высококачественные химические добавки для пищевой промышленности,
-          включая консерванты, стабилизаторы и функциональные ингредиенты для
-          улучшения качества и безопасности пищевых продуктов.
+          Карагинан – это пищевая добавка, получаемая из красных морских
+          водорослей. Используется для улучшения текстуры, стабилизации и
+          увеличения вязкости различных пищевых продуктов, включая молочные и
+          кондитерские изделия.
         </p>
         <p>
-          В ассортименте представлены проверенные временем решения для различных
-          отраслей пищевого производства:
+          Благодаря своим свойствам, карагинан помогает создавать продукты с
+          однородной консистенцией, продлевает срок хранения и улучшает
+          органолептические характеристики.
         </p>
         <ul className="list-disc list-inside space-y-1 my-3">
-          <li>сорбат калия для консервирования продуктов;</li>
-          <li>фосфомикс для улучшения текстуры и стабилизации;</li>
-          <li>комплексные функциональные смеси для специфических задач.</li>
+          <li>стабилизация и загущение молочных и растительных продуктов;</li>
+          <li>улучшение текстуры кремов, йогуртов и соусов;</li>
+          <li>поддержание однородности и предотвращение расслаивания;</li>
+          <li>продление свежести готовых продуктов.</li>
         </ul>
-        <p>
-          Наши ингредиенты соответствуют международным стандартам качества и
-          обеспечивают стабильные технологические результаты в промышленном
-          производстве.
-        </p>
       </>
     ),
   },
   {
-    title: "Основные продукты",
+    title: "Применение и виды карагинана",
     description: (
       <ul className="list-disc list-inside space-y-1">
-        <li>Сорбат калия (E202) - универсальный консервант</li>
-        <li>Фосфомикс - стабилизирующая смесь фосфатов</li>
-        <li>Бензоат натрия (E211)</li>
-        <li>Цитрат натрия (E331)</li>
-        <li>Полифосфаты для мясной промышленности</li>
-        <li>Антиоксидантные системы</li>
+        <li>Джеллановые и кристаллические формы для разных текстур</li>
+        <li>
+          Использование в молочной продукции (йогурты, десерты, мороженое)
+        </li>
+        <li>Применение в соусах и напитках для стабилизации</li>
+        <li>Комбинированные смеси для кондитерских изделий и мороженого</li>
       </ul>
     ),
   },
@@ -52,7 +46,7 @@ const Carrageenan = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
       <h1 className="text-3xl font-bold mb-6">
-        Пищевая химия: Сорбат, Фосфомикс
+        Карагинан – натуральный загуститель и стабилизатор
       </h1>
 
       {sections.map((section, i) => (
@@ -71,18 +65,14 @@ const Carrageenan = () => {
           )}
 
           <div className="flex-1">
-            <div
-              className={`transition-[max-height] duration-500 ease-in-out mb-4`}
-            >
-              <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
-              <div>{section.description}</div>
-            </div>
+            <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
+            <div>{section.description}</div>
 
             <a
               href="https://wa.me/+996999223395"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+              className="inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700 mt-4"
             >
               Заказать по WhatsApp
             </a>

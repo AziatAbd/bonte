@@ -1,35 +1,28 @@
-import fosfor from "../../assets/images/himia/fosfor-v2.png";
-import askorbinka from "../../assets/images/himia/askorbinka.png";
-import benzot from "../../assets/images/himia/benzot.png";
-import emulgator from "../../assets/images/himia/emulgator.png";
-import karaginan from "../../assets/images/himia/karaginan-v2.png";
+import emulsifierImg from "../../assets/images/himia/emulgator.png";
 
-const images = [fosfor, askorbinka, benzot, emulgator, karaginan];
+const images = [emulsifierImg];
 
 const sections = [
   {
-    title: "Пищевая химия",
+    title: "Эмульгаторы для хлебопекарной и кондитерской промышленности",
     description: (
       <>
         <p>
-          Высококачественные химические добавки для пищевой промышленности,
-          включая консерванты, стабилизаторы и функциональные ингредиенты для
-          улучшения качества и безопасности пищевых продуктов.
+          Эмульгаторы играют ключевую роль в производстве хлеба, булочных и
+          кондитерских изделий. Они способствуют улучшению структуры теста,
+          увеличению объема готовых изделий и продлению их свежести.
         </p>
         <p>
-          В ассортименте представлены проверенные временем решения для различных
-          отраслей пищевого производства:
+          Благодаря использованию современных эмульгаторов можно добиться
+          стабильного качества продукции даже при изменении условий
+          производства.
         </p>
         <ul className="list-disc list-inside space-y-1 my-3">
-          <li>сорбат калия для консервирования продуктов;</li>
-          <li>фосфомикс для улучшения текстуры и стабилизации;</li>
-          <li>комплексные функциональные смеси для специфических задач.</li>
+          <li>улучшение структуры мякиша и эластичности теста;</li>
+          <li>увеличение объема и равномерности пористости;</li>
+          <li>замедление черствения изделий;</li>
+          <li>повышение технологичности и стабильности производства.</li>
         </ul>
-        <p>
-          Наши ингредиенты соответствуют международным стандартам качества и
-          обеспечивают стабильные технологические результаты в промышленном
-          производстве.
-        </p>
       </>
     ),
   },
@@ -37,12 +30,11 @@ const sections = [
     title: "Основные продукты",
     description: (
       <ul className="list-disc list-inside space-y-1">
-        <li>Сорбат калия (E202) - универсальный консервант</li>
-        <li>Фосфомикс - стабилизирующая смесь фосфатов</li>
-        <li>Бензоат натрия (E211)</li>
-        <li>Цитрат натрия (E331)</li>
-        <li>Полифосфаты для мясной промышленности</li>
-        <li>Антиоксидантные системы</li>
+        <li>Лецитин (E322) – натуральный эмульгатор</li>
+        <li>DATEM (E472e) – для улучшения структуры хлеба</li>
+        <li>SSL (E481) – натриевая соль стеароиллактилата</li>
+        <li>Моно- и диглицериды жирных кислот (E471)</li>
+        <li>Комбинированные функциональные смеси для хлебопечения</li>
       </ul>
     ),
   },
@@ -52,7 +44,7 @@ const Emulsifiers = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
       <h1 className="text-3xl font-bold mb-6">
-        Пищевая химия: Сорбат, Фосфомикс
+        Эмульгаторы для хлебопекарной промышленности
       </h1>
 
       {sections.map((section, i) => (
@@ -71,18 +63,14 @@ const Emulsifiers = () => {
           )}
 
           <div className="flex-1">
-            <div
-              className={`transition-[max-height] duration-500 ease-in-out mb-4`}
-            >
-              <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
-              <div>{section.description}</div>
-            </div>
+            <h2 className="text-2xl font-semibold mb-3">{section.title}</h2>
+            <div>{section.description}</div>
 
             <a
               href="https://wa.me/+996999223395"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+              className="inline-block bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700 mt-4"
             >
               Заказать по WhatsApp
             </a>
