@@ -13,7 +13,6 @@ import aromat from "../../assets/images/milk/aromat.png";
 import conser from "../../assets/images/milk/conser.png";
 import ferment from "../../assets/images/milk/ferment.png";
 import stabils from "../../assets/images/milk/stabils.png";
-import fat from "../../assets/images/heroca/fat.png";
 import ice from "../../assets/images/heroca/ice.png";
 import nuggets from "../../assets/images/heroca/nuggets.jpg";
 import oil from "../../assets/images/heroca/oil.png";
@@ -51,7 +50,6 @@ const dairyProducts = [
     id: 2,
     title: "Стабилизаторы",
     img: stabils,
-    url: "stabilizers",
     inStock: false,
     onOrder: true,
   },
@@ -59,7 +57,6 @@ const dairyProducts = [
     id: 3,
     title: "Ароматизаторы",
     img: aromat,
-    url: "flavorings",
     inStock: true,
     onOrder: false,
   },
@@ -67,7 +64,6 @@ const dairyProducts = [
     id: 4,
     title: "Консерванты",
     img: conser,
-    url: "preservatives",
     inStock: false,
     onOrder: true,
   },
@@ -275,19 +271,19 @@ const horecaProducts = [
     inStock: true,
     onOrder: false,
   },
-  {
-    id: 2,
-    title: "Жиры",
-    img: fat,
-    url: "fats",
-    inStock: false,
-    onOrder: true,
-  },
+  // {
+  //   id: 2,
+  //   title: "Жиры",
+  //   img: fat,
+  //   url: "fats",
+  //   inStock: false,
+  //   onOrder: true,
+  // },
   {
     id: 3,
     title: "Наггетсы",
     img: nuggets,
-    url: "nuggets",
+    // url: "nuggets",
     inStock: true,
     onOrder: false,
   },
@@ -295,7 +291,7 @@ const horecaProducts = [
     id: 4,
     title: "Картофельные дольки, фри, cтейки",
     img: potate,
-    url: "potatoWedgesFriesSteaks",
+    // url: "potatoWedgesFriesSteaks",
     inStock: false,
     onOrder: true,
   },
@@ -303,7 +299,7 @@ const horecaProducts = [
     id: 5,
     title: "Замороженные ягоды",
     img: ice,
-    url: "frozenBerries",
+    // url: "frozenBerries",
     inStock: true,
     onOrder: false,
   },
@@ -402,7 +398,9 @@ const ProductGrid = ({ category }: ProductGridProps) => {
   const handleProductClick = (
     product: (typeof categoryData.products)[number]
   ) => {
-    navigate(`/catalog/${category}/${product.url}`);
+    if (product.url) {
+      navigate(`/catalog/${category}/${product.url}`);
+    }
   };
 
   return (

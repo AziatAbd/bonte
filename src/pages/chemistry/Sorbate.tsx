@@ -1,29 +1,31 @@
-import fosfor from "../../assets/images/himia/fosfor-v2.png";
-import askorbinka from "../../assets/images/himia/askorbinka.png";
-import benzot from "../../assets/images/himia/benzot.png";
-import emulgator from "../../assets/images/himia/emulgator.png";
-import karaginan from "../../assets/images/himia/karaginan-v2.png";
+import sorbat from "../../assets/images/products/sorbat.jpg";
 
-const images = [fosfor, askorbinka, benzot, emulgator, karaginan];
+const images = [sorbat];
 
 const sections = [
   {
-    title: "Пищевая химия",
+    title: "Сорбат",
     description: (
       <>
         <p>
-          Высококачественные химические добавки для пищевой промышленности,
-          включая консерванты, стабилизаторы и функциональные ингредиенты для
-          улучшения качества и безопасности пищевых продуктов.
+          Сорбат калия Е202 (калиевая соль сорбиновой кислоты) – искусственная
+          пищевая добавка, используемая в пищевой промышленности в качестве
+          консерванта.
         </p>
-        <p>
-          В ассортименте представлены проверенные временем решения для различных
-          отраслей пищевого производства:
-        </p>
+        <p>Сорбат калия применяется в производстве:</p>
         <ul className="list-disc list-inside space-y-1 my-3">
-          <li>сорбат калия для консервирования продуктов;</li>
-          <li>фосфомикс для улучшения текстуры и стабилизации;</li>
-          <li>комплексные функциональные смеси для специфических задач.</li>
+          <li> майонеза,</li>
+          <li>алкогольных и безалкогольных напитков,</li>
+          <li>молочных продуктов,</li>
+          <li>маргарина,</li>
+          <li>сыров,</li>
+          <li>колбасных изделий,</li>
+          <li>консервированных фруктов,</li>
+          <li>сухофруктов,</li>
+          <li>рыбных консервов,</li>
+          <li>кондитерских изделий,</li>
+          <li>для обработки поверхности хлебобулочных изделий,</li>
+          <li>для изготовления упаковочных материалов.</li>
         </ul>
         <p>
           Наши ингредиенты соответствуют международным стандартам качества и
@@ -33,27 +35,12 @@ const sections = [
       </>
     ),
   },
-  {
-    title: "Основные продукты",
-    description: (
-      <ul className="list-disc list-inside space-y-1">
-        <li>Сорбат калия (E202) - универсальный консервант</li>
-        <li>Фосфомикс - стабилизирующая смесь фосфатов</li>
-        <li>Бензоат натрия (E211)</li>
-        <li>Цитрат натрия (E331)</li>
-        <li>Полифосфаты для мясной промышленности</li>
-        <li>Антиоксидантные системы</li>
-      </ul>
-    ),
-  },
 ];
 
 const Sorbate = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
-      <h1 className="text-3xl font-bold mb-6">
-        Пищевая химия: Сорбат, Фосфомикс
-      </h1>
+      <h1 className="text-3xl font-bold mb-6">Пищевая химия: Сорбат</h1>
 
       {sections.map((section, i) => (
         <div

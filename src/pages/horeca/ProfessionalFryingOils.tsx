@@ -1,16 +1,7 @@
-import nuggets from "../../assets/images/heroca/nuggets.jpg";
-import burger2 from "../../assets/images/heroca/ice.png";
-import burger3 from "../../assets/images/heroca/potate.png";
+import nuggets from "../../assets/images/heroca/oil.png";
 import { useState } from "react";
 
-const sections = [
-  { title: "Смеси специй для бургеров и мясных блюд", img: nuggets },
-  { title: "Панировочные смеси и кляры", img: burger2 },
-  { title: "Соусы и маринады быстрого приготовления", img: burger3 },
-  { title: "Усилители вкуса и аромата" },
-  { title: "Функциональные добавки для фритюра" },
-  { title: "Готовые смеси для выпечки булочек и хлеба" },
-];
+const sections = [{ title: "Профессиональные фритюрные масла", img: nuggets }];
 
 const ProfessionalFryingOils = () => {
   const [expandedSection, setExpandedSection] = useState<number | null>(null);
@@ -23,12 +14,10 @@ const ProfessionalFryingOils = () => {
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8 font-[Helvetica]">
       <h1 className="text-3xl font-bold">HoReCa (Hotel, Restaurant, Cafe)</h1>
       <p>
-        Специализированные ингредиенты и решения для сферы общественного
-        питания, включая рестораны, кафе, фаст-фуд и кейтеринг.
-      </p>
-      <p>
-        Мы предлагаем широкий ассортимент продуктов, которые позволяют готовить
-        блюда быстро, стабильно и с отличными вкусовыми качествами.
+        Наши фритюрные масла имеют свой уникальный жирно-кислотный состав.
+        Именно многообразие используемого сырья позволяет нам предлагать
+        продукты, удовлетворяющие широким требованиям наших клиентов при
+        значительной экономии затрат.
       </p>
 
       {sections.map((sec, i) => (
@@ -54,19 +43,17 @@ const ProfessionalFryingOils = () => {
             >
               <h2 className="text-2xl font-semibold">{sec.title}</h2>
               <p className="mb-3">
-                Ингредиенты подобраны с учётом высокой проходимости и
-                необходимости быстрого обслуживания без потери качества.
+                Преимущества наших фритюрных масел и смесей:
               </p>
               <ul className="list-disc list-inside mb-3 space-y-1">
-                <li>Оптимизация вкуса и текстуры готовых блюд</li>
-                <li>Снижение времени приготовления</li>
-                <li>Устойчивость к заморозке и нагреванию</li>
+                <li>высокое качество</li>
+                <li>стабильность функциональных свойств каждой партии</li>
+                <li>
+                  cмесь растительных масел лучше раскрывает вкус, аромат
+                  готового продукта и придает привычный внешний вид обжаренного
+                  продукта
+                </li>
               </ul>
-              <p className="mb-4">
-                Все продукты соответствуют требованиям пищевой безопасности и
-                подходят для использования в любых форматах заведений
-                общественного питания.
-              </p>
               <a
                 href="https://wa.me/+996999223395"
                 target="_blank"

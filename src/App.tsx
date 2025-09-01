@@ -37,7 +37,7 @@ import Sorbate from "./pages/chemistry/Sorbate";
 import Phosphomix from "./pages/chemistry/Phosphomix";
 import Carrageenan from "./pages/chemistry/Carrageenan";
 import AscorbicAcid from "./pages/chemistry/AscorbicAcid";
-import Emulsifiers from "./pages/chemistry/emulsifiers";
+import Emulsifiers from "./pages/chemistry/Emulsifiers";
 import SodiumBenzoate from "./pages/chemistry/SodiumBenzoate";
 
 import Yeast from "./pages/bakery/Yeast";
