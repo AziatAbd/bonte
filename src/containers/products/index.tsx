@@ -455,7 +455,7 @@ const ProductGrid = ({ category }: ProductGridProps) => {
               <img
                 src={product.img}
                 alt={product.title}
-                className="w-full h-48 object-contain"
+                className="w-full h-48 object-cover"
               />
             </div>
 
