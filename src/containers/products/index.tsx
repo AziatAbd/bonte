@@ -354,6 +354,48 @@ const foodChemistryProducts = [
     inStock: false,
     onOrder: true,
   },
+  {
+    id: 7,
+    title: "Гуаровая камедь,Е412 (загуститель), Китай",
+    img: "https://images.satu.kz/224491578_w250_h250_guarovaya-kamede412-zagustitel.jpg",
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 8,
+    title: "Ксантановая камедь,Е415 (загуститель), Китай",
+    img: "https://images.satu.kz/224489433_w250_h250_ksantanovaya-kamede415-zagustitel.jpg",
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 9,
+    title: "Гуммиарабик, Е414 (Gum Arabic), Китай",
+    img: "https://images.satu.kz/224483681_w250_h250_gummiarabik-e414-gum.jpg",
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 10,
+    title: "Конжаковая камедь Е425 (пищевой загуститель)",
+    img: "https://images.satu.kz/224473241_w250_h250_konzhakovaya-kamed-e425.jpg",
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 11,
+    title: "Карбоксиметилцеллюлоза Е 466 (кмц)",
+    img: "https://images.satu.kz/188784961_w250_h250_karboksimetiltsellyuloza-e-466.jpg",
+    inStock: false,
+    onOrder: true,
+  },
+  {
+    id: 12,
+    title: "Альгинат натрия Е401 (вытяжка из водорослей)",
+    img: "https://images.satu.kz/139348041_w250_h250_alginat-natriya-e401.jpg",
+    inStock: false,
+    onOrder: true,
+  },
 ];
 
 const productCategories = {
@@ -375,11 +417,6 @@ const productCategories = {
     title: "Пищевая химия",
     products: foodChemistryProducts,
   },
-
-  // colors: { title: "Пищевые красители", products: colorProducts },
-  // filler: { title: "Наполнители", products: fillerProducts },
-  // spices: { title: "Специи", products: spiceProducts },
-  // stabilizers: { title: "Стабилизаторы", products: stabilizerProducts },
 };
 
 type ProductCategoryKey = keyof typeof productCategories;
