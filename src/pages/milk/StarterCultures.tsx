@@ -2,11 +2,102 @@ import milk from "../../assets/images/products/milk.png";
 
 const sections = [
   { title: "Заквасочные культуры", img: milk },
-  // { title: "Сывороточные белковые концентраты", img: milk2 },
-  // { title: "Казеинаты и казеины" },
-  // { title: "Молочные жиры и сливки" },
-  // { title: "Лактоза и молочные сахара" },
-  // { title: "Функциональные молочные добавки" },
+  {
+    title: "Провола и Проволоне",
+    img: "https://alce.eu/public/applicazione/images/mini113g.jpg",
+  },
+  {
+    title: "Горгонзола",
+    img: "https://alce.eu/public/applicazione/images/mini146g.jpg",
+  },
+  {
+    title: "Качокавалло",
+    img: "https://alce.eu/public/applicazione/images/mini81g.jpg",
+  },
+  {
+    title: "Фонталь",
+    img: "https://alce.eu/public/applicazione/images/mini152g.jpg",
+  },
+  {
+    title: "Примосале",
+    img: "https://alce.eu/public/applicazione/images/mini112g.jpg",
+  },
+  {
+    title: "Сыры типа Чеддер",
+    img: "https://alce.eu/public/applicazione/images/mini160g.jpg",
+  },
+  {
+    title: "Домашний сыр",
+    img: "https://alce.eu/public/applicazione/images/mini114g.jpg",
+  },
+  {
+    title: "Твёрдые сыры",
+    img: "https://alce.eu/public/applicazione/images/mini110g.jpg",
+  },
+  {
+    title: "Жидкие кисломолочные продукты",
+    img: "https://alce.eu/public/applicazione/images/mini148g.jpg",
+  },
+  {
+    title: "Йогурт",
+    img: "https://alce.eu/public/applicazione/images/mini147g.jpg",
+  },
+  {
+    title: "Мягкие сыры",
+    img: "https://alce.eu/public/applicazione/images/mini7g.jpg",
+  },
+  {
+    title: "Азиаго Прессато",
+    img: "https://alce.eu/public/applicazione/images/mini145g.jpg",
+  },
+  {
+    title: "Выдержанные твёрдые сыры",
+    img: "https://alce.eu/public/applicazione/images/mini155g.jpg",
+  },
+  {
+    title: "Белые рассольные сыры",
+    img: "https://alce.eu/public/applicazione/images/mini116g.jpg",
+  },
+  {
+    title: "Сыры проволонового типа",
+    img: "https://alce.eu/public/applicazione/images/mini115g.jpg",
+  },
+  {
+    title: "Континентальные сыры",
+    img: "https://alce.eu/public/applicazione/images/mini161g.jpg",
+  },
+  {
+    title: "Вытяжные сыры",
+    img: "https://alce.eu/public/applicazione/images/mini164g.jpg",
+  },
+  {
+    title: "Тома",
+    img: "https://alce.eu/public/applicazione/images/mini108g.jpg",
+  },
+  {
+    title: "Роббиола",
+    img: "https://alce.eu/public/applicazione/images/mini28g.jpg",
+  },
+  {
+    title: "Моцарелла",
+    img: "https://alce.eu/public/applicazione/images/mini84g.jpg",
+  },
+  {
+    title: "Латтерия Италико",
+    img: "https://alce.eu/public/applicazione/images/mini154g.jpg",
+  },
+  {
+    title: "Каприно",
+    img: "https://alce.eu/public/applicazione/images/mini151g.jpg",
+  },
+  {
+    title: "Качотта",
+    img: "https://alce.eu/public/applicazione/images/mini150g.jpg",
+  },
+  {
+    title: "Крешенца",
+    img: "https://alce.eu/public/applicazione/images/mini109g.jpg",
+  },
 ];
 
 const StarterCulture = () => {
@@ -64,20 +155,10 @@ const StarterCulture = () => {
             >
               <h2 className="text-2xl font-semibold">{sec.title}</h2>
               <p className="mb-3">
-                Закваска этого типа - LYOBAC®️ - простая в использовании и
-                управлении, может использоваться для производства различных
-                итальянских и международных сыров.
+                {sec.title === "Заквасочные культуры"
+                  ? "Закваска этого типа - LYOBAC®️ - простая в использовании и управлении, может использоваться для производства различных итальянских и международных сыров."
+                  : `Высококачественные культуры для производства ${sec.title.toLowerCase()}. Обеспечивают превосходный вкус, текстуру и длительный срок хранения готового продукта.`}
               </p>
-              {/* <ul className="list-disc list-inside mb-3 space-y-1">
-                <li>Улучшение питательной ценности и сроков хранения</li>
-                <li>Оптимизация консистенции и структуры</li>
-                <li>Снижение себестоимости без потери качества</li>
-              </ul>
-              <p className="mb-4">
-                Все компоненты соответствуют международным стандартам качества,
-                имеют сертификаты халяль и кошер, и могут использоваться в любом
-                технологическом процессе.
-              </p> */}
               <a
                 href="https://wa.me/+996999223395"
                 target="_blank"
@@ -87,12 +168,6 @@ const StarterCulture = () => {
                 Заказать по WhatsApp
               </a>
             </div>
-            {/* <button
-              className="text-blue-500 underline cursor-pointer"
-              onClick={() => toggleSection(i)}
-            >
-              {expandedSection === i ? "Скрыть" : "Подробнее"}
-            </button> */}
           </div>
         </div>
       ))}

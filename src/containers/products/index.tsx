@@ -79,7 +79,7 @@ const dairyProducts = [
     id: 6,
     title: "Заменитель молочного жира",
     img: zamMoloko,
-    url: "milkFatReplacer",
+    url: "/catalog/specialized-fats/milkFatReplacer",
     inStock: false,
     onOrder: true,
   },
@@ -399,7 +399,7 @@ const ProductGrid = ({ category }: ProductGridProps) => {
     product: (typeof categoryData.products)[number]
   ) => {
     if (product.url) {
-      navigate(`/catalog/${category}/${product.url}`);
+      navigate(`${product.url}`);
     }
   };
 
@@ -422,12 +422,12 @@ const ProductGrid = ({ category }: ProductGridProps) => {
               />
             </div>
 
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-3 text-gray-800">
+            <div className="p-4 ">
+              <h3 className="text-lg font-semibold mb-3 text-gray-800 text-nowrap text-ellipsis overflow-hidden">
                 {product.title}
               </h3>
 
-              <div className="flex gap-2 text-sm">
+              <div className="flex gap-2 text-sm h-full items-end">
                 <span
                   className={`px-2 py-1 rounded ${
                     product.inStock
