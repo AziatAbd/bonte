@@ -254,7 +254,7 @@ const сonfectioneryProducts = [
   },
   {
     id: 5,
-    title: "Сливки",
+    title: "Крем - сливки",
     img: slivki,
     url: "cream",
     inStock: true,
